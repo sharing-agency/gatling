@@ -1,0 +1,128 @@
+# Translation of Plugins - Simple Google reCAPTCHA - Stable (latest release) in French (France)
+# This file is distributed under the same license as the Plugins - Simple Google reCAPTCHA - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-02-02 16:23:55+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - Simple Google reCAPTCHA - Stable (latest release)\n"
+
+#: simple-google-recaptcha.php:280
+msgid "Unknown error."
+msgstr "Erreur inconnue."
+
+#: simple-google-recaptcha.php:246
+msgid "Emergency reCAPTCHA deactivate"
+msgstr "Désactivation d’urgence du reCAPTCHA"
+
+#: simple-google-recaptcha.php:235
+msgid "This site is protected by reCAPTCHA and the Google <a href=\"https://policies.google.com/privacy\">Privacy Policy</a> and <a href=\"https://policies.google.com/terms\">Terms of Service</a> apply."
+msgstr "Ce site est protégé par reCAPTCHA et la <a href=\"https://policies.google.com/privacy\">Politique de confidentialité</a>, ainsi que les <a href=\"https://policies.google.com/terms\">Conditions de service</a> Google s’appliquent."
+
+#: simple-google-recaptcha.php:145
+msgid "Hide reCAPTCHA v3 badge"
+msgstr "Masquer le badge reCAPTCHA v3"
+
+#: simple-google-recaptcha.php:303
+msgid "Error"
+msgstr "Erreur "
+
+#: simple-google-recaptcha.php:327
+msgid "is enabled"
+msgstr "est activé"
+
+#: simple-google-recaptcha.php:333
+msgid "is disabled"
+msgstr "est désactivé"
+
+#: simple-google-recaptcha.php:304
+msgid "verification failed"
+msgstr "vérification échouée"
+
+#: simple-google-recaptcha.php:144
+msgid "Enable reCAPTCHA v3"
+msgstr "Activer reCAPTCHA v3"
+
+#: simple-google-recaptcha.php:143
+msgid "Disable on login form"
+msgstr "Désactiver sur le formulaire de connexion"
+
+#: simple-google-recaptcha.php:148
+msgid "Google reCAPTCHA keys"
+msgstr "Clés Google reCAPTCHA"
+
+#. Author of the plugin
+msgid "Michal Novák"
+msgstr "Michal Novák"
+
+#: simple-google-recaptcha.php:328
+msgid "Keep on mind, that in case of emergency, you can disable this plugin via FTP access, just rename the plugin folder."
+msgstr "Conservez à l’esprit qu’en cas d’urgence, vous pouvez désactiver cette extension via un accès FTP, il suffit de renommer le dossier de l’extension."
+
+#: simple-google-recaptcha.php:326
+msgid "Notice"
+msgstr "Notification"
+
+#: simple-google-recaptcha.php:278
+msgid "The response is no longer valid: either is too old or has been used previously."
+msgstr "La réponse n’est plus valide : soit elle est trop ancienne, soit elle a été utilisée auparavant."
+
+#: simple-google-recaptcha.php:276
+msgid "The request is invalid or malformed."
+msgstr "La requête est non valide ou malformée."
+
+#: simple-google-recaptcha.php:274
+msgid "The response parameter is invalid or malformed."
+msgstr "Le paramètre de réponse est non valide ou malformé."
+
+#: simple-google-recaptcha.php:272
+msgid "The secret parameter is invalid or malformed."
+msgstr "Le paramètre secret est non valide ou mal formé."
+
+#: simple-google-recaptcha.php:270
+msgid "The response parameter is missing."
+msgstr "Le paramètre de réponse est manquant."
+
+#: simple-google-recaptcha.php:268
+msgid "The secret parameter is missing."
+msgstr "Le paramètre secret est manquant."
+
+#: simple-google-recaptcha.php:332
+msgid "Warning"
+msgstr "Avertissement"
+
+#. Description of the plugin
+msgid "Simply protect your WordPress against spam comments and brute-force attacks, thanks to Google reCAPTCHA!"
+msgstr "Protégez votre WordPress contre les indésirables et les attaques de brute-force, merci à Google reCAPTCHA !"
+
+#: simple-google-recaptcha.php:314
+msgid "Do you have JavaScript enabled?"
+msgstr "Avez vous activé JavaScript ?"
+
+#: simple-google-recaptcha.php:84 simple-google-recaptcha.php:96
+msgid "Settings"
+msgstr "Réglages "
+
+#. Author URI of the plugin
+msgid "https://www.novami.cz"
+msgstr "https://www.novami.cz"
+
+#. Plugin Name of the plugin
+msgid "Simple Google reCAPTCHA"
+msgstr "Simple Google reCAPTCHA"
+
+#: simple-google-recaptcha.php:334
+msgid "You have to <a href=\"https://www.google.com/recaptcha/admin\" rel=\"external\">register your domain</a>, get required Google reCAPTCHA keys %s and save them bellow."
+msgstr "Vous devez <a href=\"https://www.google.com/recaptcha/admin\" rel=\"external\">enregistrer votre domaine</a>, obtenir les %s des clés Google reCAPTCHA nécessaires et les enregistrer ci-dessous."
+
+#: simple-google-recaptcha.php:142
+msgid "Secret Key"
+msgstr "Clé secrète"
+
+#: simple-google-recaptcha.php:141
+msgid "Site Key"
+msgstr "Clé du site"
