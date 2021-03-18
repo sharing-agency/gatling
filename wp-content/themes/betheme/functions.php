@@ -7,7 +7,7 @@
  * @link https://muffingroup.com
  */
 
-define('MFN_THEME_VERSION', '22.0');
+define('MFN_THEME_VERSION', '22.0.1');
 
 // theme related filters
 

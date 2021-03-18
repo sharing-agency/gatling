@@ -5,19 +5,31 @@ $demos 	= array(
 		'categories'	=> array( 'bus', 'blo', 'por' ),
 		'plugins'			=> array( 'cf7', 'rev' ),
 	),
+	'dietitian3' => array(
+		'name'				=> 'Dietitian 3',
+		'categories'	=> array( 'bus', 'blo', 'ele', 'mfn' ),
+		'plugins'			=> array( 'cf7', 'rev', 'ele' ),
+		'wrapper'			=> '1140',
+		'new'					=> true,
+	),
+	'itservice5' => array(
+		'name'				=> 'IT Service 5',
+		'categories'	=> array( 'bus', 'ele', 'mfn' ),
+		'plugins'			=> array( 'cf7', 'rev', 'ele' ),
+		'wrapper'			=> '1150',
+		'new'					=> true,
+	),
 	'webmaster2' => array(
 		'name'				=> 'Webmaster 2',
 		'categories'	=> array( 'bus', 'cre', 'one', 'ele', 'mfn' ),
 		'plugins'			=> array( 'cf7', 'rev', 'ele' ),
 		'wrapper'			=> '1160',
-		'new'					=> true,
 	),
 	'internet3' => array(
 		'name'				=> 'Internet 3',
 		'categories'	=> array( 'bus', 'ele', 'mfn' ),
 		'plugins'			=> array( 'cf7', 'rev', 'ele' ),
 		'wrapper'			=> '1140',
-		'new'					=> true,
 	),
 	'cleaner3' => array(
 		'name'				=> 'Cleaner 3',
@@ -313,9 +325,9 @@ $demos 	= array(
 		'plugins'			=> array( 'cf7', 'rev', 'ele' ),
 		'wrapper'			=> '1120',
 	),
-	'business3_el' => array(
+	'business3' => array(
 		'name'				=> 'Business 3',
-		'categories'	=> array( 'bus', 'ele' ),
+		'categories'	=> array( 'bus', 'ele', 'mfn' ),
 		'plugins'			=> array( 'cf7', 'rev', 'ele' ),
 	),
 	'data' => array(
@@ -335,9 +347,9 @@ $demos 	= array(
 		'plugins'			=> array( 'cf7', 'rev', 'woo', 'ele' ),
 		'wrapper'			=> '1120',
 	),
-	'corporation2_el' => array(
+	'corporation2' => array(
 		'name'				=> 'Corporation 2',
-		'categories'	=> array( 'bus', 'ele' ),
+		'categories'	=> array( 'bus', 'ele', 'mfn' ),
 		'plugins'			=> array( 'cf7', 'rev', 'ele' ),
 	),
 	'barman2' => array(
@@ -369,9 +381,9 @@ $demos 	= array(
 		'plugins'			=> array( 'cf7', 'rev', 'ele' ),
 		'wrapper'			=> '1120',
 	),
-	'agency4_el' => array(
+	'agency4' => array(
 		'name'				=> 'Agency 4',
-		'categories'	=> array( 'bus', 'por', 'ele' ),
+		'categories'	=> array( 'bus', 'por', 'ele', 'mfn' ),
 		'plugins'			=> array( 'cf7', 'rev', 'ele' ),
 	),
 	'massage2' => array(
@@ -558,32 +570,38 @@ $demos 	= array(
 	),
 	'hotel5' => array(
 		'name'				=> 'Hotel 5',
-		'categories'	=> array( 'bus' ),
-		'plugins'			=> array( 'cf7', 'rev' ),
+		'categories'	=> array( 'bus', 'ele', 'mfn' ),
+		'plugins'			=> array( 'cf7', 'rev', 'ele' ),
+		'wrapper'			=> '1120',
 	),
 	'rallydriver' => array(
 		'name'				=> 'Rally Driver',
-		'categories'	=> array( 'bus', 'ent' ),
-		'plugins'			=> array( 'cf7', 'rev' ),
+		'categories'	=> array( 'bus', 'ent', 'ele', 'mfn' ),
+		'plugins'			=> array( 'cf7', 'rev', 'ele' ),
+		'wrapper'			=> '1120',
 	),
 	'foodtruck' => array(
 		'name'				=> 'Food Truck',
-		'categories'	=> array( 'bus', 'one' ),
-		'plugins'			=> array( 'rev' ),
+		'categories'	=> array( 'bus', 'one', 'ele', 'mfn' ),
+		'plugins'			=> array( 'rev', 'ele' ),
+		'wrapper'			=> '1120',
 	),
 	'mall' => array(
-		'categories'	=> array( 'bus', 'blo' ),
-		'plugins'			=> array( 'cf7', 'rev' ),
+		'categories'	=> array( 'bus', 'blo', 'ele', 'mfn' ),
+		'plugins'			=> array( 'cf7', 'rev', 'ele' ),
+		'wrapper'			=> '1120',
 	),
 	'psychologist2' => array(
 		'name'				=> 'Psychologist 2',
-		'categories'	=> array( 'bus' ),
-		'plugins'			=> array( 'cf7', 'rev' ),
+		'categories'	=> array( 'bus', 'ele', 'mfn' ),
+		'plugins'			=> array( 'cf7', 'rev', 'ele' ),
+		'wrapper'			=> '1140',
 	),
 	'handyman2' => array(
 		'name'				=> 'Handyman 2',
-		'categories'	=> array( 'bus', 'cre', 'por' ),
-		'plugins'			=> array( 'cf7', 'rev' ),
+		'categories'	=> array( 'bus', 'cre', 'por', 'ele', 'mfn' ),
+		'plugins'			=> array( 'cf7', 'rev', 'ele' ),
+		'wrapper'			=> '1120',
 	),
 	'security3' => array(
 		'name'				=> 'Security 3',

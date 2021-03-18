@@ -34,6 +34,7 @@ Ensuite vous pourrez accéder a l'installation du wordpress pour définir les id
 ## Themes :
 
 - BeTheme
+- Vio 
 
 
 
