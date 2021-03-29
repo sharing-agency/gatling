@@ -11,3 +11,12 @@
  Tags:         custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
  Text Domain:  vio-child
 */
+
+html, body {
+    margin: 0px;
+}
+
+.container {
+    margin: 0px;
+    padding: 0px;
+}

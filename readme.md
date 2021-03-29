@@ -1,12 +1,12 @@
-# Base Wordpress - w/ Plugins & Themes
+# Gatling
 
 ## Initialisation
 
 Lors du clonage du repo, il ne faut pas oulier de créer le wp-config a partir du wp-config-sample.php
 
-Il vous suffit de changer les identifiants de connexion à la base de données.
+Il vous suffit de changer les identifiants de connexion à la base de données et d'importer la base de données wp_gatling.
 
-Ensuite vous pourrez accéder a l'installation du wordpress pour définir les identifiants de connexion du wp-admin.
+Les identifiants du Back Office : admin - password
 
 ## Plugins :
 
@@ -31,10 +31,9 @@ Ensuite vous pourrez accéder a l'installation du wordpress pour définir les id
 - Yoast Duplicate Post
 - Simple Google Recaptcha
 
-## Themes :
+## Theme :
 
-- BeTheme
-- Vio & Vio Child
+- Vio
 
 
 
