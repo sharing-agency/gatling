@@ -12,6 +12,8 @@
  Text Domain:  vio-child
 */
 
+/* Reset Default Margin / Padding */
+
 html, body {
     margin: 0px;
 }
@@ -19,4 +21,149 @@ html, body {
 .container {
     margin: 0px;
     padding: 0px;
+    width: auto;
 }
+
+.vc_section {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.vc_row {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.vc_column_container>.vc_column-inner {
+    padding: 0px !important;
+}
+
+.wpb_button, .wpb_content_element, ul.wpb_thumbnails-fluid>li {
+    margin: 0px !important;
+}
+
+.default-page p, .comment-content p, .wpb_text_column p {
+    margin: 0px !important;
+}
+
+.row {
+    margin: 0px;
+}
+
+/* Fin Reset */
+
+/* Footer */
+
+.copy_row_footer {
+    color: #8A8F98;
+    padding: 6rem !important;
+    font-size: 16px;
+}
+
+.row_menu_footer {
+    color: #646971;
+    padding: 4rem !important;
+}
+
+#col_menu_why, #col_menu_learn, #col_menu_gatling, #col_menu_follow {
+    width: 25%;
+}
+
+#menu-why-gatling, #menu-learn-more, #menu-gatling-corp, #menu-follow-us {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#menu-why-gatling > li, #menu-learn-more > li, #menu-gatling-corp > li, #menu-follow-us > li {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 25px;
+}
+
+#menu-why-gatling > li > a > img, #menu-learn-more > li > a > img, #menu-gatling-corp > li > a > img, #menu-follow-us > li > a > img {
+    width: 30px;
+    filter: invert(43%) sepia(8%) saturate(439%) hue-rotate(178deg) brightness(91%) contrast(92%);
+}
+
+.title_menu_footer {
+    font-size: 18px;
+    margin-bottom: 25px !important;
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+
+    .col_logo_footer {
+        margin-left: 4rem !important;
+        margin-right: 4rem !important;
+    }
+
+    .logo_footer {
+        text-align: start !important;
+    }
+
+    .row_menu_footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .col_logo_footer, .col_menu_footer {
+        width: auto !important;     
+    }
+
+    .col_menu_footer {
+        margin-top: 4rem;
+    }
+
+    #col_menu_why, #col_menu_learn, #col_menu_gatling, #col_menu_follow {
+        width: 20%;
+    }
+
+    .row_inside_menu_footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 767px){
+
+    .col_logo_footer {
+        margin: 0 4rem !important;
+        width: auto !important;
+    }
+
+    .logo_footer {
+        text-align: start !important;
+    }
+
+    .row_menu_footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .col_menu_footer {
+        margin: 2rem 4rem !important;
+        width: auto !important;
+    }
+
+    .col_menu_footer {
+        margin-top: 2rem;
+    }
+
+    .row_inside_menu_footer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #col_menu_why, #col_menu_learn, #col_menu_gatling, #col_menu_follow {
+        width: 100%;
+        margin: 2rem 0rem;
+    }
+}
+
+
+
+/* Fin Footer */
