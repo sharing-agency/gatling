@@ -22,13 +22,11 @@
 		<div class="container">
 			<!-- header_main -->
 			<div class="header_main">
-				<?php if ( vio_global_var( 'header_one_logo', 'url', true ) ) { ?>
 					<!-- brand-logo -->
 					<div class="brand-logo radiantthemes-retina">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( vio_global_var( 'header_one_logo', 'url', true ) ); ?>" alt="<?php echo esc_attr( vio_global_var( 'header_one_logo', 'alt', true ) ); ?>"></a>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo_link"></a>
 					</div>
 					<!-- brand-logo -->
-				<?php } ?>
 				<?php if ( true == vio_global_var( 'header_one_mobile_menu_display', '', false ) ) : ?>
 					<!-- header-responsive-nav -->
 					<div class="header-responsive-nav hidden-lg hidden-md visible-sm visible-xs">

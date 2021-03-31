@@ -52,6 +52,50 @@ html, body {
 
 /* Fin Reset */
 
+/* Default Style */
+
+body {
+    font-family: "DM Sans" !important;
+}
+
+h1 {
+    font-size: 70px !important;
+    letter-spacing: 0px !important;
+    line-height: 70px !important;
+    margin: 24px 0 !important;
+    padding: 0 !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.orange_button > button{
+    background-color: #F78557 !important;
+    color: white !important;
+    border: none !important;
+    background-image: none !important;
+    font-size: 14px;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+
+.violet_button > button {
+    background-color: #6161D6 !important;
+    color: white !important;
+    border: none !important;
+    background-image: none !important;
+    font-size: 14px;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+
+/* Fin Default Style */
+
 /* Footer */
 
 .copy_row_footer {
@@ -164,6 +208,237 @@ html, body {
     }
 }
 
-
-
 /* Fin Footer */
+
+/* Navbar */
+
+.header_main {
+    margin: 0px 10%;
+}
+
+.wraper_header.style-one .wraper_header_main .header_main .brand-logo {
+    margin-top: 0px;
+}
+
+.wraper_header.style-one .wraper_header_main .nav {
+    margin-top: 0px;
+}
+
+.brand-logo.radiantthemes-retina {
+    width: 250px;
+    height: 50px;
+}
+
+.logo_link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url('./assets/logo/logo-gatling.svg');
+    background-repeat: no-repeat;
+}
+
+.wraper_header.style-one .wraper_header_main {
+    background-color: transparent !important;
+}
+
+#menu-navbar > li > a {
+    font-family: "DM Sans";
+    padding: 10px 5px;
+    font-weight: 400 !important;
+}
+
+.menu_button > a{
+    background-color: #F78557 !important;
+    color: white !important;
+    border: none !important;
+    background-image: none !important;
+    font-size: 16px !important;
+    padding: 10px 20px !important;
+    border-radius: 5px;
+}
+
+.wraper_header.style-one .wraper_header_main.radiantthemes-sticky-style-two.i-am-delayed-sticky {
+    background-color: white !important;
+    box-shadow: 0px 1px 3px #0000001A;
+}
+
+.wraper_header.style-one .wraper_header_main.radiantthemes-sticky-style-two.i-am-delayed-sticky > .container > .header_main > nav > .menu-navbar-container > ul > .menu-item > a {
+    color: #24275E;
+}
+
+.wraper_header.style-one .wraper_header_main.radiantthemes-sticky-style-two.i-am-delayed-sticky > .container > .header_main > .brand-logo.radiantthemes-retina > .logo_link {
+    background-image: url('./assets/logo/logo-gatling-noir.svg');
+}
+
+/* Fin Navbar */
+
+/* Banner Header */
+
+.banner_header {
+    padding-top: 200px !important;
+    padding-bottom: 200px !important;
+    background: url('./assets/home/Trace-1548.svg') top 100px right -100px, url('./assets/home/Groupe-1533.svg') top 200px right -400px;
+    background-repeat: no-repeat;
+    background-color: #24275E;
+}
+
+.row_text_video {
+    margin: 0 15% !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column_text_button {
+    width: 40% !important;
+}
+
+.column_video {
+    width: 55% !important;
+}
+
+.text_banner_home {
+    color: white;
+}
+
+.text_banner_home > div > p{
+    margin-bottom: 36px !important;
+}
+
+.interior_column_banner_button > div > div > .orange_button {
+    margin-right: 20px !important;
+}
+
+@media screen and (max-width: 1199px){
+    .row_text_video {
+        flex-direction: column;
+    }
+
+    .column_text_button {
+        width: 100% !important;
+        margin-bottom: 50px;
+    }
+    
+    .column_video {
+        width: 100% !important;
+    }
+}
+
+
+/* Fin Banner Header */
+
+/* Section Newsletter */
+
+.section_newsletter {
+    margin-top: 200px !important;
+    margin-bottom: 100px !important;
+}
+
+.row_newsletter {
+    margin: 0 10% !important;
+    background-color: #24275E;
+    padding: 50px !important;
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px #0000001A;
+}
+
+.title_newsletter {
+    color: #F78557;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.join_newsletter {
+    color: white;
+    font-size: 18px;
+    padding-top: 30px !important;
+}
+
+.newsletter_input_submit {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.text_newsletter_bottom {
+    color: #FFFFFF;
+    opacity: 0.5;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.newsletter_form {
+    padding-top: 50px;
+}
+
+.input_div {
+    width: 30%;
+}
+
+.input_div > label, .input_div > label > span  {
+    display: block;
+    width: 100%;
+}
+
+.newsletter_input {
+    border-radius: 4px 0px 0px 4px;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+}
+
+.submit_div {
+    width: 15%;
+}
+
+.submit_newsletter {
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0px 4px 4px 0px;
+    border: none;
+    text-align: left;
+    background: #F78557;
+    color: white;
+    font-size: 16px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+    .input_div {
+        width: 100%;
+    }
+
+    .submit_div {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .newsletter_input_submit {
+        flex-direction: column;
+    }
+
+    .input_div {
+        width: 100%;
+    }
+
+    .submit_div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .submit_newsletter {
+        border-radius: 4px;
+        margin-top: 20px;
+        text-align: center;
+        width: auto !important;
+    }
+
+    .newsletter_input {
+        border-radius: 4px;
+    }
+}
+
+/* Fin Section Newsletter */
