@@ -671,6 +671,7 @@ h3 {
 .column_image_open_source {
     background-color: #24275E;
     border-top-left-radius: 30px;
+    padding-right: 5% !important;
 }
 
 .column_text_open_source {
@@ -694,14 +695,10 @@ h3 {
 .image_open_source {
     padding-left: 5%;
     padding-top: 5%;
-    padding-bottom: 25%;
 }
 
 .column_text_enterprise {
     background-color: #24275E;
-}
-
-.column_text_enterprise {
     padding-right: 10% !important;
     padding-left: 5% !important;
 }
@@ -714,8 +711,46 @@ h3 {
     margin-bottom: 30px !important;
 }
 
-.column_image_enterprise {
-    background: linear-gradient(180deg, #24275E 10%, #FFF 10%);
+.row_bottom_solutions {
+    background: linear-gradient(-90deg, #24275E 60%, #FFF 60%);
+    padding-bottom: 100px !important;
+    padding-top: 100px !important;
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+    .column_text_open_source {
+        width: 45% !important;
+        padding-left: 5% !important;
+    }
+
+    .column_image_open_source {
+        width: 55% !important;
+    }
+
+    .column_text_enterprise {
+        width: 45% !important;
+        padding-right: 5% !important;
+    }
+
+    .column_image_enterprise {
+        width: 55% !important;
+        padding-left: 5% !important;
+    }
+
+    .row_bottom_solutions {
+        background: linear-gradient(-90deg, #24275E 55%, #FFF 55%);
+    }
+}
+
+@media screen and (max-width: 767px){
+    .column_image_open_source {
+        border-top-right-radius: 30px;
+    }
+
+    .row_bottom_solutions {
+        background: linear-gradient(180deg, #24275E 70%, #FFF 70%);
+        flex-direction: column-reverse !important;
+    }
 }
 
 
