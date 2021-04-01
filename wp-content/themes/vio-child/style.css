@@ -488,7 +488,7 @@ h3 {
 .section_trusted {
     background-color: #F7F7F7;
     margin-top: 100px !important;
-    margin-bottom: 100px !important;
+    margin-bottom: 50px !important;
 }
 
 .row_trusted {
@@ -660,6 +660,66 @@ h3 {
 }
 
 /* Fin Section Trusted Homepage */
+
+/* Section Open Source & Enterprise Homepage */
+
+.section_solution {
+    padding: 100px 0px !important;
+    margin-bottom: 200px !important;
+}
+
+.column_image_open_source {
+    background-color: #24275E;
+    border-top-left-radius: 30px;
+}
+
+.column_text_open_source {
+    padding-left: 10% !important;
+    padding-right: 5% !important;
+}
+
+.tag_orange {
+    color: #F78557;
+    font-size: 18px !important;
+}
+
+.title_open_source {
+    color: #1F2024 !important;
+}
+
+.text_open_source {
+    margin-bottom: 30px !important;
+}
+
+.image_open_source {
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 25%;
+}
+
+.column_text_enterprise {
+    background-color: #24275E;
+}
+
+.column_text_enterprise {
+    padding-right: 10% !important;
+    padding-left: 5% !important;
+}
+
+.desc_enterprise {
+    color: #FFFFFF !important;
+}
+
+.text_enterprise {
+    margin-bottom: 30px !important;
+}
+
+.column_image_enterprise {
+    background: linear-gradient(180deg, #24275E 10%, #FFF 10%);
+}
+
+
+/* Fin Section Open Source & Enterprise Homepage */
 
 /* Section Talk About Gatling Homepage */
 
