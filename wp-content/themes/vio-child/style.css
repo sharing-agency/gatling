@@ -105,6 +105,19 @@ h3 {
     border-radius: 5px;
 }
 
+.blue_button > button {
+    background-color: #4A9FE5 !important;
+    color: white !important;
+    border: none !important;
+    background-image: none !important;
+    font-size: 14px;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+
 /* Fin Default Style */
 
 /* Footer */
@@ -343,7 +356,7 @@ h3 {
 
 .section_card {
     background-color: #24275E; 
-    background: linear-gradient(180deg, #24275E 40%, #FFF 40%);
+    background: linear-gradient(180deg, #24275E 30%, #FFF 30%);
 }
 
 .row_title_card {
@@ -353,7 +366,7 @@ h3 {
 .row_card {
     margin: 0 5% !important;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .row_card > div {
@@ -371,6 +384,52 @@ h3 {
 
 .card_info > div > p > span{
     font-size: 18px !important;
+}
+
+.row_card_long {
+    margin: 100px 7% 0px 7% !important;
+    background-color: white;
+    box-shadow: 0px 10px 20px #0000001A;
+    border-radius: 8px;
+    padding: 3rem !important;
+}
+
+.column_text_card_long {
+    padding-left: 50px !important;
+}
+
+.column_text_card_long > div > div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.text_card_long > div > p {
+    margin: 10px 0px !important;
+}
+
+.blue_tag {
+    font-size: 18px !important;
+    color: #4A9FE5 !important;
+}
+
+.title_card_long {
+    font-size: 28px !important;
+    line-height: 40px;
+    font-weight: bold !important;
+}
+
+.desc_card_long {
+    font-size: 18px !important;
+    color: #646971 !important;
+}
+
+.button_card_long {
+    height: 100%;
+    margin-bottom: 0px !important;
+    display: flex !important;
+    align-items: flex-end;
 }
 
 @media (min-width: 768px) and (max-width: 1366px){
@@ -404,18 +463,222 @@ h3 {
     }
 
     .row_card > div{
-        flex-basis: 60%;
+        flex-basis: 90%;
         margin: 2%;
-        height: 250px;
+        height: 300px;
     }
+
+    .column_text_card_long {
+        padding-left: 0px !important;
+    }
+
+    .column_image_card_long {
+        margin-top: 50px !important;
+    }
+
+    .img_card_long {
+        text-align: left !important;
+    } 
 }
 
 /* Fin Section Card Homepage */
 
+/* Section Trusted Homepage */
+
+.section_trusted {
+    background-color: #F7F7F7;
+    margin-top: 100px !important;
+    margin-bottom: 100px !important;
+}
+
+.row_trusted {
+    padding: 100px 0px !important;
+}
+
+.column_text_trusted {
+    padding-right: 10% !important;
+}
+
+.tag_purple {
+    color: #6161D6;
+    font-size: 18px;
+}
+
+.title_trusted {
+    color: #1F2024 !important;
+    margin: 20px 0px !important;
+}
+
+.row_card_download_dev {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+.row_card_download_dev > div {
+    width: auto;
+}
+
+.card_download > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #6161D6;
+    width: 140px;
+    height: 100px;
+    border-radius: 8px;
+    margin-right: 10px !important;
+}
+
+.card_download > div > p {
+    font-size: 18px !important;
+    color: white !important;
+}
+
+.card_download > div > p > strong {
+    font-size: 30px !important;
+    color: white !important;
+}
+
+.card_devops > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #6161D6;
+    width: 140px;
+    height: 100px;
+    border-radius: 8px;
+    margin: 0px 10px !important;
+}
+
+.card_devops > div > p {
+    font-size: 18px !important;
+    color: white !important;
+}
+
+.card_devops > div > p > strong {
+    font-size: 30px !important;
+    color: white !important;
+}
+
+.customer_button > button{
+    background-color: white !important;
+    color: #6161D6 !important;
+    font-size: 16px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+
+.customer_button > button:after {
+    position: relative;
+    content: '';
+    border-style: solid;
+    border-width: 0.15em 0.15em 0 0;
+    display: inline-block;
+    height: 0.45em;
+    left: 10px;
+    top: 7px;
+    transform: rotate(45deg);
+    vertical-align: top;
+    width: 0.45em;
+}
+
+
+#trusted_adobe, #trusted_bamtech, #trusted_deutsche, #trusted_sophos, #trusted_aircall, #trusted_oui, #trusted_enedis, #trusted_inter {
+    position: absolute;
+}
+
+#trusted_adobe {
+    bottom: 20px;
+    left: 100px;
+}
+
+#trusted_bamtech {
+    bottom: 190px;
+    left: 50px;
+}
+
+#trusted_deutsche {
+    top: -30px;
+    left: 150px;
+}
+
+#trusted_sophos {
+    bottom: 170px;
+    left: 270px;
+}
+
+#trusted_oui {
+    top: -80px;
+    left: 400px;
+}
+
+#trusted_enedis {
+    bottom: 130px;
+    left: 440px;
+}
+
+#trusted_aircall {
+    bottom: -10px;
+    left: 300px;
+}
+
+#trusted_inter {
+    bottom: -40px;
+    left: 500px;
+}
+
+@media (min-width: 1200px) and (max-width: 1366px){
+    .column_text_trusted {
+        padding-right: 0px !important;
+        padding-left: 10% !important;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+
+    .row_trusted {
+        padding: 5% !important;
+    }
+
+    .column_text_trusted {
+        width: 100% !important;
+        padding: 0% !important;
+    }
+
+    .column_image_trusted {
+        display: none !important;
+    }
+
+    .row_card_download_dev {
+        display: flex;
+    }
+}
+
+/* Fin Section Trusted Homepage */
+
+/* Section Talk About Gatling Homepage */
+
+.row_talk {
+    margin: 50px 10% 0px 10% !important;
+}
+
+
+.title_talk > div > h2 {
+    color: #1F2024 !important;
+}
+
+
+/* Fin Section Talk About Gatling Homepage */
+
 /* Section Newsletter */
 
 .section_newsletter {
-    margin-top: 200px !important;
+    margin-top: 100px !important;
     margin-bottom: 100px !important;
 }
 
