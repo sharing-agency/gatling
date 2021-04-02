@@ -16,12 +16,12 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" <?php post_class( 'site-main' ); ?> >
-	<?php if ( ! empty( vio_global_var( 'blog-style', '', false ) ) ) : ?>
-		<?php get_template_part( 'inc/blog/blog', vio_global_var( 'blog-style', '', false ) ); ?>
-	<?php else : ?>
-		<?php get_template_part( 'inc/blog/blog', 'default' ); ?>
-	<?php endif; ?>
+	
 	</main><!-- #main -->
 </div><!-- #primary -->
+
 <?php
 get_footer();
+
+
+
