@@ -669,14 +669,15 @@ h3 {
 }
 
 .column_image_open_source {
-    background-color: #24275E;
     border-top-left-radius: 30px;
     padding-right: 5% !important;
+    padding-bottom: 100px;
+    background-color: #24275E;
 }
 
 .column_text_open_source {
     padding-left: 10% !important;
-    padding-right: 5% !important;
+    padding-right: 2% !important;
 }
 
 .tag_orange {
@@ -698,9 +699,10 @@ h3 {
 }
 
 .column_text_enterprise {
+    background-repeat: no-repeat;
     background-color: #24275E;
     padding-right: 10% !important;
-    padding-left: 5% !important;
+    padding-left: 2% !important;
 }
 
 .desc_enterprise {
@@ -715,6 +717,28 @@ h3 {
     background: linear-gradient(-90deg, #24275E 60%, #FFF 60%);
     padding-bottom: 100px !important;
     padding-top: 100px !important;
+}
+
+.column_text_enterprise::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 335px;
+    height: 563px;
+    top: -130px;
+    right: -50px;
+    background: url('./assets/home/Groupe-1533.svg');
+}
+
+.column_image_open_source::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 185px;
+    height: 180px;
+    bottom: 0px;
+    right: 200px;
+    background: url('./assets/home/Tracé\ 1560.svg');
 }
 
 @media (min-width: 768px) and (max-width: 1200px){
