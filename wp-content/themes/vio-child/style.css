@@ -119,6 +119,10 @@ h3 {
     border-radius: 5px;
 }
 
+.blue_button > button > a {
+    color: white;
+}
+
 /* Fin Default Style */
 
 /* Footer */
@@ -388,7 +392,7 @@ h3 {
 }
 
 .row_card_long {
-    margin: 100px 7% 0px 7% !important;
+    margin: 100px 10% 0px 10% !important;
     background-color: white;
     box-shadow: 0px 10px 20px #0000001A;
     border-radius: 8px;
@@ -862,6 +866,7 @@ h3 {
 
 .section_talk {
     background-color: #F7F7F7;
+    padding: 50px !important;
 }
 
 .row_talk {
@@ -876,10 +881,147 @@ h3 {
 
 /* Fin Section Talk About Gatling Homepage */
 
+/* Section Resources Homepage */
+
+.section_resources_home {
+    background-color: #24275E;
+    padding: 5% 10% !important;
+    background-image: url('./assets/home/Tracé\ 1544.svg');
+    background-repeat: no-repeat;
+    background-position: top 50px right -80px;
+}
+
+.long_card_academy {
+    background-color: #3B3D6E !important;
+    border: 1px solid #50538E !important;
+    box-shadow: 0px 10px 20px #0000001A;
+    border-radius: 8px;
+    padding: 25px !important;
+    margin: 50px 0px 25px 0px !important;
+}
+
+.img_gatling_academy > figure > div > img {
+    background-color: white !important;
+    border-radius: 8px;
+}
+
+.img_gatling_academy {
+    text-align: right !important;
+}
+
+.title_resource_homepage {
+    color: white;
+    font-size: 28px;
+}
+
+.desc_resource_card {
+    color: #FFF;
+    opacity: 0.5;
+    font-size: 18px;
+}
+
+.button_card_long_academy {
+    margin-bottom: 0px !important;
+}
+
+.widget_homepage > div > section > h2 {
+    display: none;
+}
+
+.container_custom_post {
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom_post {
+    background-color: #3B3D6E;
+    padding: 20px;
+    border-radius: 8px;
+    width: 32%;
+}
+
+.avatar_cpt {
+    width: 78px;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+.container_author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.author_cpt {
+    color: white;
+    font-size: 16px;
+}
+
+.author_role_cpt {
+    color: white;
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+.transparent_button {
+    margin-bottom: 0px !important;
+    margin-top: 25px !important;
+}
+
+.transparent_button > button {
+    color: white !important;
+    font-size: 16px !important;
+    background-color: #3B3D6E !important;
+    background-image: none !important;
+    border: none !important;
+}
+
+.transparent_button > button:after {
+    position: relative;
+    content: '';
+    border-style: solid;
+    border-width: 0.15em 0.15em 0 0;
+    display: inline-block;
+    height: 0.45em;
+    left: 10px;
+    top: 7px;
+    transform: rotate(45deg);
+    vertical-align: top;
+    width: 0.45em;
+}
+
+@media screen and (max-width: 1199px){
+
+    .long_card_academy {
+        flex-direction: column;
+    }
+
+    .column_text_card_long_academy {
+        width: 100% !important;
+        margin-bottom: 50px;
+    }
+
+    .img_gatling_academy {
+        text-align: left !important;
+    }
+
+    .container_custom_post {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .custom_post {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+}
+
+
+/* Fin Section Resources Homepage */
+
 /* Section Newsletter */
 
 .section_newsletter {
-    margin-top: 100px !important;
     margin-bottom: 100px !important;
 }
 
