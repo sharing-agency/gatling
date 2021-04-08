@@ -133,11 +133,11 @@ class WP_Custom_Post_Type_Widgets_Recent_Posts extends WP_Widget {
 					$author_avatar = get_avatar_url($author_id);
 					$term_obj_list = get_the_terms($recent_post, 'speakers');
 					$terms_speaker_id = join(', ', wp_list_pluck($term_obj_list, 'term_id'));
-					$terms_speaker_name = join(', ', wp_list_pluck($term_obj_list, 'term_id'));
+					$terms_speaker_name = join(', ', wp_list_pluck($term_obj_list, 'name'));
+					$terms_speaker_description = join(', ', wp_list_pluck($term_obj_list, 'description'));
 					$speaker_image_id = get_term_meta($terms_speaker_id, 'image', true);
 					$speaker_image_data = wp_get_attachment_image_src($speaker_image_id, 'full');
 					$speaker_image = $speaker_image_data[0];
-					var_dump($speaker_image);
 					?>
 				<div class="custom_post">
 					<?php
@@ -165,10 +165,10 @@ class WP_Custom_Post_Type_Widgets_Recent_Posts extends WP_Widget {
 					<p class="blue_tag">Tutorial #1</p>
 					<h3 class="title_resource_homepage"><?php echo esc_html( $title ); ?></h3>
 						<div class="container_author">
-							<img src="<?php echo $author_avatar ?>" class="avatar_cpt">
+							<img src="<?php echo $speaker_image ?>" class="avatar_cpt">
 							<div class="author">
-								<p class="author_cpt"><?php the_author_meta('display_name', $author_id); ?></p>
-								<p class="author_role_cpt">CTO & Co-founder @Gatling Corp</p>
+								<p class="author_cpt"><?php echo $terms_speaker_name ?></p>
+								<p class="author_role_cpt"><?php echo $terms_speaker_description ?></p>
 							</div>
 						</div>
 					<div class="blue_button">
