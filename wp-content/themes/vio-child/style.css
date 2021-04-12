@@ -1133,3 +1133,142 @@ h3 {
 }
 
 /* Fin Section Newsletter */
+
+/* GATLING ACADEMY */
+
+/* Banner Gatling Academy */
+
+.section_banner_gatling_academy {
+    background: url('./assets/gatling-academy/Groupe\ 1533.svg') no-repeat top 100px right -170px, linear-gradient(180deg, #24275E 90%, #FFF 90%);
+}
+
+.row_banner_gatling_academy {
+    padding: 200px 10% 0px 10% !important;
+    background: 
+}
+
+.text_banner{
+    color: white !important;
+}
+
+.block_text_banner {
+    margin-bottom: 20px !important;
+}
+
+/* Fin Banner Gatling Academy */
+
+/* What is GA */
+
+.row_what_ga {
+    margin: 50px 10% !important;
+}
+
+.block_text_what_ga {
+    margin-right: 30% !important;
+    margin-left: 15% !important;
+}
+
+.title_what_ga {
+    color: #1F2024 !important;
+}
+
+.title_orange_what_ga {
+    color: #F78557 !important;
+}
+
+.title_text_what_ga {
+    color: #1F2024 !important;
+    font-size: 22px !important;
+}
+
+.text_what_ga {
+    color: #646971 !important;
+    padding-top: 20px !important;
+}
+
+.text_what_ga > strong {
+    color: #646971;
+}
+
+/* Fin What is GA */
+
+/* Section Module GA */
+
+.section_module {
+    background-color: #F7F7F7;
+    padding: 100px 0px !important;
+}
+
+.row_module {
+    margin: 0 20% !important;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.module_purple, .module_orange {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px #0000001A;
+    width: 400px !important;
+}
+
+.module_purple > div > div, .module_orange > div > div {
+    padding: 50px 20px;
+}
+
+.title_module {
+    font-size: 28px !important;
+    font-weight: bold;
+    color: #1F2024 !important;
+    padding: 20px 0px;
+}
+
+.title_orange_module {
+    color: #F78557 !important;
+    font-size: 18px !important;
+    padding-bottom: 20px;
+}
+
+.title_purple_module {
+    color: #6161D6 !important;
+    font-size: 18px !important;
+    padding-bottom: 20px;
+}
+
+.button_module {
+    margin-top: 30px;
+}
+
+.grey_text_module {
+    color: #646971 !important;
+    font-size: 16px !important;
+    line-height: 19px;
+}
+
+.sub_title_module {
+    color: #1F2024 !important;
+    font-weight: bold !important;
+}
+
+.sub_title_section_purple_module {
+    color: #6161D6;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.sub_title_section_orange_module {
+    color: #F78557;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.after_text_module {
+    padding-top: 20px;
+    color: #8A8F98 !important;
+}
+
+.desc_module_section {
+    color: #1F2024 !important;
+}
+
+/* Fin Section Module GA */
