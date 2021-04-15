@@ -106,6 +106,32 @@ h3 {
     border-radius: 5px;
 }
 
+.white_button > button {
+    background-color: white !important;
+    color: #6161D6 !important;
+    border: none !important;
+    background-image: none !important;
+    font-size: 14px;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+
+.white_button_with_border > button {
+    background-color: white !important;
+    color: #6161D6 !important;
+    background-image: none !important;
+    font-size: 14px;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    border: 2px solid #6161D6 !important;
+}
+
 .blue_button > button {
     background-color: #4A9FE5 !important;
     color: white !important;
@@ -1567,3 +1593,116 @@ tfoot {
 }
 
 /* Fin Section Table Differences OS / Enterprise */
+
+/* PAGE GATLING ENTERPRISE */
+
+/* Section Header Gatling Enterprise */
+
+.row_double_button_header > div {
+    width: auto;
+    margin-right: 30px;
+}
+
+/* Fin Section Header Gatling Enterprise */
+
+/* Section Try Gatling FrontLine */
+
+.section_try_gatling_enterprise {
+    background-color: #F7F7F7;
+    padding: 50px 0px !important;
+}
+
+.row_try_gatling_enterprise {
+    margin: 0 15% !important;
+}
+
+.title_try_gatling {
+    color: #1F2024 !important;
+}
+
+.row_inner_card_try {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px !important;
+}
+
+.row_inner_card_try > div {
+    background-color: white;
+    padding: 50px 0px;
+    margin: 0 2% !important;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px #0000001A;
+}
+
+/* Fin Section Try Gatling Frontline */
+
+/* Section Difference Premises - Cloud */
+
+.section_difference_premises_cloud {
+    padding: 100px 0px !important;
+}
+
+.row_difference_premises_cloud {
+    margin: 0 20% !important;
+}
+
+.title_difference_premises_cloud {
+    color: #1F2024 !important;
+}
+
+.row_inner_difference_premises_cloud {
+    margin-top: 50px !important;
+}
+
+.desc_difference_premises_cloud {
+    margin: 0 10% !important;
+}
+
+/* Fin Section Difference Premises - Cloud */
+
+/* Section What is Gatling Frontline */
+
+.row_what_gatling_frontline {
+    margin: 0px 10% !important;
+    display: flex;
+    justify-content: center;
+}
+
+.icon_info_card {
+    text-align: center;
+}
+
+.column_card_gatling_frontline {
+    width: 400px !important;
+    height: 400px !important;
+    box-shadow: 0px 10px 20px #0000001A;
+    border-radius: 8px;
+}
+
+.icon_info_card > div > i{
+    color: #6161D6 !important;
+    font-size: 40px;
+}
+
+.text_info_card_gatling_frontline {
+    margin-bottom: 30px !important;
+}
+
+.text_what_gatling_frontline {
+    padding-right: 30%;
+}
+
+.no_radius {
+    border-radius: 0px;
+}
+
+.column_button_convinced {
+    padding: 20px 10px !important;
+}
+
+.text_convinced {
+    margin-top: 50px !important;
+}
+
+/* Fin Section What is Gatling Frontline */
