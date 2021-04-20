@@ -317,8 +317,12 @@ h3 {
     box-shadow: 0px 1px 3px #0000001A;
 }
 
-.wraper_header.style-one .wraper_header_main.radiantthemes-sticky-style-two.i-am-delayed-sticky > .container > .header_main > nav > .menu-navbar-container > ul > .menu-item > a {
-    color: #24275E;
+.wraper_header.style-one .wraper_header_main.radiantthemes-sticky-style-two.i-am-delayed-sticky > .container > .header_main > nav > .menu-navbar-container > ul > .menu-item-has-children > a {
+    color: #24275E !important;
+}
+
+.wraper_header.style-one .wraper_header_main.radiantthemes-sticky-style-two.i-am-delayed-sticky > .container > .header_main > nav > .menu-navbar-container > ul > .menu-item-has-children > a:hover {
+    color: #24275E !important;
 }
 
 .wraper_header.style-one .wraper_header_main.radiantthemes-sticky-style-two.i-am-delayed-sticky > .container > .header_main > .brand-logo.radiantthemes-retina > .logo_link {
@@ -329,8 +333,12 @@ h3 {
     visibility: visible;
 }
 
-#menu-navbar > li > a:hover {
+.menu_button > a {
     color: white !important;
+}
+
+#menu-navbar > li > a {
+    color: white;
 }
 
 .sub-menu {
@@ -1191,7 +1199,6 @@ h3 {
 
 .row_banner_gatling_academy {
     padding: 200px 10% 0px 10% !important;
-    background: 
 }
 
 .text_banner{
@@ -1200,6 +1207,12 @@ h3 {
 
 .block_text_banner {
     margin-bottom: 20px !important;
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+    .row_banner_gatling_academy > div {
+        width: 100%;
+    }
 }
 
 /* Fin Banner Gatling Academy */
@@ -1247,7 +1260,7 @@ h3 {
 }
 
 .row_module {
-    margin: 0 20% !important;
+    margin: 0 15% !important;
     display: flex;
     justify-content: space-evenly;
 }
