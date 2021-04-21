@@ -1331,6 +1331,60 @@ h3 {
     color: #1F2024 !important;
 }
 
+@media (min-width: 1000px) and (max-width: 1199px) {
+    .row_module {
+        margin: 0 10% !important;
+        justify-content: space-between;
+    }
+
+    .row_what_ga {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .row_what_ga > div {
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    .block_text_what_ga {
+        margin: 0 !important;
+    }
+
+    .img_what_ga {
+        text-align: center !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .row_module {
+        margin: 0 10% !important;
+    }
+
+    .row_module > div {
+        margin: 20px 0px;
+        width: 100% !important;
+    }
+
+    .row_what_ga {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .row_what_ga > div {
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    .block_text_what_ga {
+        margin: 0 !important;
+    }
+
+    .img_what_ga {
+        text-align: center !important;
+    }
+}
+
 /* Fin Section Module GA */
 
 /* FIN GATLING ACADEMY */
@@ -1359,9 +1413,9 @@ h3 {
 }
 
 .row_download_get_started {
-    margin: 100px 20% !important;
+    margin: 100px 10% !important;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .row_download_get_started > div {
@@ -1407,7 +1461,7 @@ h3 {
 
 .column_number_step_get_started {
     width: 5% !important;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 .column_info_step_get_started {
@@ -1479,6 +1533,84 @@ h3 {
     width: 100%;
 }
 
+@media screen and (max-width: 1366px){
+
+    .row_tips_get_started {
+        margin: 20px 10% !important;
+    }
+
+    .row_download_get_started > div {
+        width: auto;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .row_download_get_started > div > div > div > .orange_button {
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .row_download_get_started > div > div > div > .violet_button {
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .column_number_step_get_started {
+        width: 7% !important;
+        margin: auto;
+    }
+
+    .column_info_step_get_started {
+        margin-top: 20px;
+        width: 100% !important;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .column_button_step_get_started {
+        width: 100% !important;
+    }
+
+    .column_button_step_get_started > div > div {
+        text-align: center;
+    }
+
+    .input_step_get_started {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .column_number_step_get_started {
+        width: 12% !important;
+    }
+
+    .input_step_get_started {
+        width: 100%;
+    }
+
+    .input_step_get_started > div > form > .newsletter_input_submit {
+        flex-direction: row; !important;
+    }
+
+    .input_step_get_started > div > form > .newsletter_input_submit > .submit_div {
+        justify-content: flex-end;
+        align-items: flex-start;
+        width: auto;
+    }
+
+    .input_step_get_started > div > form > .newsletter_input_submit > .submit_div > .submit_newsletter {
+        border-top-left-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .column_number_step_get_started {
+        width: 17% !important;
+    }
+}
 
 /* Fin Section OS / Enterprise / Step */
 
@@ -1605,6 +1737,35 @@ tfoot {
     background-color: #BABEC6;
 }
 
+.column-2.sorting_disabled > img{
+    width: 300px;
+}
+
+.column-3.sorting_disabled > img{
+    width: 300px;
+}
+
+@media screen and (max-width: 1366px) {
+    .column-2.sorting_disabled > img{
+        width: 200px;
+    }
+
+    .column-3.sorting_disabled > img{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .column-2.sorting_disabled > img{
+        width: 100px;
+    }
+
+    .column-3.sorting_disabled > img{
+        width: 100px;
+    }
+}
+
+
 /* Fin Section Table Differences OS / Enterprise */
 
 /* PAGE GATLING ENTERPRISE */
@@ -1648,6 +1809,44 @@ tfoot {
     box-shadow: 0px 10px 20px #0000001A;
 }
 
+@media screen and (max-width: 1200px){
+    .row_try_gatling_enterprise {
+        margin: 0 10% !important;
+    }
+
+    .card_on_premises {
+        width: 40% !important;
+    }
+
+    .card_cloud_marketplaces {
+        width: 40% !important;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .row_try_gatling_enterprise {
+        margin: 0 10% !important;
+    }
+
+    .row_inner_card_try {
+        flex-wrap: wrap;
+        margin-bottom: 20px !important;
+    }
+
+    .row_inner_card_try > div {
+        margin: 20px 0px !important;
+    }
+
+    .card_on_premises {
+        width: 80% !important;
+    }
+
+    .card_cloud_marketplaces {
+        width: 80% !important;
+    }
+}
+
+
 /* Fin Section Try Gatling Frontline */
 
 /* Section Difference Premises - Cloud */
@@ -1670,6 +1869,13 @@ tfoot {
 
 .desc_difference_premises_cloud {
     margin: 0 10% !important;
+}
+
+@media screen and (max-width: 768px){
+    .row_inner_difference_premises_cloud > div{
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 /* Fin Section Difference Premises - Cloud */
@@ -1718,4 +1924,108 @@ tfoot {
     margin-top: 50px !important;
 }
 
+@media screen and (max-width: 1200px){
+    .row_what_gatling_frontline > div {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .text_what_gatling_frontline {
+        padding: 0px;
+    }
+
+    .column_button_convinced {
+        width: 50% !important;
+    }
+}
+
 /* Fin Section What is Gatling Frontline */
+
+/* Section Tabs Price */
+
+.row_tabs_price {
+    margin: 50px 15% !important;
+}
+
+.nav-tabs {
+    margin: 20px 20%;
+}
+
+.inner_row_offers {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 0% !important;
+}
+
+.our_offers_title {
+    margin-top: 50px !important;
+    margin-bottom: 100px !important;
+}
+
+.column_price {
+    border: 2px solid #8a9caf;
+    margin: 0px 20px;
+}
+
+.icon_top_border {
+    position: absolute;
+    top: -40px;
+    left: 40%;
+}
+
+.desc_offers {
+    padding: 30px 50px 50px 50px;
+}
+
+.price {
+    text-align: center;
+}
+
+.pricing {
+    margin-bottom: 0px !important;
+}
+
+.holder {
+    padding: 10px 0px 0px 0px !important;
+    border-bottom: 0px !important;
+}
+
+.list {
+    margin: 0px !important;
+}
+
+.btn_buy {
+    display: block !important;
+    text-align: center;
+}
+
+.btn_start_for_free {
+    display: block !important;
+    text-align: center;
+}
+
+.btn_buy > button{
+    background-color: #29323d !important;
+    color: white !important;
+    border: none !important;
+    background-image: none !important;
+    font-size: 14px;
+    width: 200px !important;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.btn_start_for_free > button{
+    background-color: #EDF0F4 !important;
+    color: #29323d !important;
+    border: 2px solid #29323d !important;
+    background-image: none !important;
+    font-size: 14px;
+    width: 200px !important;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+
+/* Fin Section Tabs Price */

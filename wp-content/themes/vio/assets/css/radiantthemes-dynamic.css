@@ -1,21 +1,3 @@
-@font-face {
-font-family:"Overpass Thin";
-src:url(https://test.radiantthemes.com/vio/wp-content/uploads/2019/05/Overpass-Thin.ttf);}
-@font-face {
-font-family:"Overpass Light";
-src:url(https://test.radiantthemes.com/vio/wp-content/uploads/2019/05/Overpass-Light.ttf);}
-@font-face {
-font-family:"Overpass SemiBold";
-src:url(https://test.radiantthemes.com/vio/wp-content/uploads/2019/05/Overpass-SemiBold.ttf);}
-@font-face {
-font-family:"NotoSerif";
-src:url(https://test.radiantthemes.com/vio/wp-content/uploads/2019/05/NotoSerif-Regular.ttf);}
-@font-face {
-font-family:"Overpass Regular";
-src:url(https://test.radiantthemes.com/vio/wp-content/uploads/2019/05/Overpass-Regular.ttf);}
-@font-face {
-font-family:"Overpass Bold";
-src:url(https://test.radiantthemes.com/vio/wp-content/uploads/2019/05/Overpass-Bold.ttf);}
 
 
 .radiantthemes-website-layout.boxed{
@@ -135,20 +117,20 @@ body[data-header-style='header-style-one'] #hamburger-menu.right{
 
 
 body[data-header-style='header-style-two'] #hamburger-menu{
-	max-width: 460px ;
+	max-width: 550px ;
 }
 
 body[data-header-style='header-style-two'] #hamburger-menu.right{
-	right: -460px ;
+	right: -550px ;
 }
 
 
 body[data-header-style='header-style-six'] #hamburger-menu{
-	max-width: 520px ;
+	max-width: 550px ;
 }
 
 body[data-header-style='header-style-six'] #hamburger-menu.right{
-	right: -520px ;
+	right: -550px ;
 }
 
 
@@ -162,11 +144,11 @@ body[data-header-style='header-style-sixteen'] #hamburger-menu.right{
 
 
 .wraper_inner_banner_main .inner_banner_main{
-	text-align: center ;
+	text-align: left ;
 }
 
 .wraper_inner_banner_breadcrumb .inner_banner_breadcrumb{
-	text-align: center ;
+	text-align: left ;
 }
 
 

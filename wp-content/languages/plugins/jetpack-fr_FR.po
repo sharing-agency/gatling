@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Jetpack &#8211; WP Security, Backup, Speed, &amp; Growth - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-03-10 15:54:08+0000\n"
+"PO-Revision-Date: 2021-04-08 14:53:14+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -219,7 +219,7 @@ msgstr "Achats"
 
 #: modules/masterbar/admin-menu/class-admin-menu.php:192
 msgid "Plans"
-msgstr "Offres"
+msgstr "Plans"
 
 #: modules/masterbar/admin-menu/class-admin-menu.php:191
 msgid "Upgrades"
@@ -649,11 +649,11 @@ msgstr "L’apparition des nouvelles images sur votre site peut prendre jusqu’
 
 #: modules/widgets/class-jetpack-instagram-widget.php:578
 msgid "Number of columns:"
-msgstr "Nombre de colonnes :"
+msgstr "Nombre de colonnes :"
 
 #: modules/widgets/class-jetpack-instagram-widget.php:567
 msgid "Number to display:"
-msgstr "Nombre à afficher :"
+msgstr "Nombre à afficher :"
 
 #. translators: %1$s is the URL of the connected Instagram account, %2$s is the
 #. username of the connected Instagram account, %3$s is the URL to disconnect
@@ -729,11 +729,11 @@ msgstr "Instagram"
 
 #: modules/widgets/twitter-timeline.php:563
 msgid "Color scheme:"
-msgstr "Jeu de couleurs :"
+msgstr "Jeu de couleurs :"
 
 #: modules/widgets/twitter-timeline.php:550
 msgid "Border color (in hex format):"
-msgstr "Couleur de la bordure (au format hex) :"
+msgstr "Couleur de la bordure (au format hex) :"
 
 #: modules/widgets/twitter-timeline.php:533
 msgid "Show scrollbar"
@@ -753,7 +753,7 @@ msgstr "Afficher l’en-tête"
 
 #: modules/widgets/twitter-timeline.php:474
 msgid "Maximum width (in pixels; 220 to 1200):"
-msgstr "Largeur maximale (en pixels, entre 220 et 1200 px) :"
+msgstr "Largeur maximale (en pixels; entre 220 et 1200 px) :"
 
 #: modules/widgets/twitter-timeline.php:461
 msgid "Number of tweets in the timeline (1 to 20):"
@@ -761,7 +761,7 @@ msgstr "Nombre de tweets dans le fil d’actualité (de 1 à 20) :"
 
 #: modules/widgets/twitter-timeline.php:448
 msgid "Height (in pixels; at least 200):"
-msgstr "Hauteur (en pixels, 200 px minimum) :"
+msgstr "Hauteur (en pixels; au moins 200) :"
 
 #: modules/widgets/twitter-timeline.php:440
 msgid "Fixed"
@@ -773,7 +773,7 @@ msgstr "Dynamique"
 
 #: modules/widgets/twitter-timeline.php:414
 msgid "Number of tweets shown:"
-msgstr "Nombre de tweets à afficher :"
+msgstr "Nombre de tweets à afficher :"
 
 #. translators: %1$s is the page count
 #: modules/infinite-scroll/infinity.php:1435
@@ -803,7 +803,7 @@ msgstr "L’ID de l’article auquel le média doit être attaché."
 #: _inc/lib/debugger/class-jetpack-cxn-test-base.php:388
 #: _inc/lib/debugger/class-jetpack-cxn-tests.php:274
 msgid "Jetpack is in Offline Mode:"
-msgstr "Jetpack est en mode de développement :"
+msgstr "Jetpack est en mode développement :"
 
 #: _inc/lib/class-jetpack-instagram-gallery-helper.php:67
 msgid "The requested Instagram connection is not available anymore."
@@ -1736,7 +1736,7 @@ msgstr "Note"
 
 #: modules/shortcodes/youtube.php:187
 msgid "YouTube Error: empty URL args"
-msgstr "Erreur de Youtube : pas d'arguments URL"
+msgstr "Erreur YouTube : arguments d’URL vides"
 
 #: modules/shortcodes/youtube.php:179
 msgid "YouTube Error: bad URL entered"

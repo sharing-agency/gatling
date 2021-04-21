@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Yoast Duplicate Post - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-01-27 09:37:10+0000\n"
+"PO-Revision-Date: 2021-03-23 08:56:09+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,7 +11,15 @@ msgstr ""
 "Language: fr\n"
 "Project-Id-Version: Plugins - Yoast Duplicate Post - Stable (latest release)\n"
 
-#: duplicate-post-admin.php:225
+#: src/handlers/class-check-changes-handler.php:135
+msgid "Added"
+msgstr "Ajouté"
+
+#: src/handlers/class-check-changes-handler.php:134
+msgid "Removed"
+msgstr "Retiré"
+
+#: duplicate-post-admin.php:227
 msgid "Now also available in Elementor: the powerful Rewrite & Republish feature. Updating your content has never been easier!"
 msgstr "Maintenant disponible dans Elementor : la puissante fonctionnalité de réécriture et republication. La mise à jour de votre contenu n’a jamais été aussi facile !"
 
@@ -75,9 +83,9 @@ msgstr "Afficher ces liens"
 msgid "Warning: users will be able to copy, rewrite and republish all posts, even those of other users."
 msgstr "Avertissement : les comptes utilisateurs pourront copier, réécrire et republier toutes les publications, même celles des autres comptes."
 
-#: src/ui/class-bulk-actions.php:80 src/ui/class-admin-bar.php:110
-#: src/ui/class-admin-bar.php:129 src/ui/class-classic-editor.php:164
-#: src/admin/class-options.php:284
+#: src/admin/class-options.php:284 src/ui/class-bulk-actions.php:80
+#: src/ui/class-admin-bar.php:110 src/ui/class-admin-bar.php:129
+#: src/ui/class-classic-editor.php:164
 msgid "Rewrite & Republish"
 msgstr "Réécriture & republication"
 
@@ -130,7 +138,7 @@ msgstr "Vous pouvez maintenant réécrire votre publication dans cette version d
 msgid "An error occurred while republishing the post."
 msgstr "Une erreur est survenue lors de la republication de la publication."
 
-#: src/ui/class-classic-editor.php:210 src/class-post-republisher.php:87
+#: src/class-post-republisher.php:87 src/ui/class-classic-editor.php:210
 msgid "Republish"
 msgstr "Republier"
 
@@ -149,38 +157,38 @@ msgstr "Échec de la création de la copie."
 msgid "You cannot create a copy of a post which is intended for Rewrite & Republish."
 msgstr "Vous ne pouvez pas créer une copie d’une publication destinée à une réécriture et republication."
 
-#: src/handlers/class-check-changes-handler.php:101
+#: src/handlers/class-check-changes-handler.php:117
 msgid "&larr; Return to editor"
 msgstr "← Retour à l’éditeur"
 
 #. translators: %s: original item link (to view or edit) or title.
-#: src/handlers/class-check-changes-handler.php:96
+#: src/handlers/class-check-changes-handler.php:112
 msgid "Compare changes of duplicated post with the original (&#8220;%s&#8221;)"
 msgstr "Comparez les modifications de la publication dupliquée avec l’originale (« %s »)"
 
-#: src/handlers/class-check-changes-handler.php:82
+#: src/handlers/class-check-changes-handler.php:98
 msgid "Changes overview failed, could not find original post."
 msgstr "Échec de l’aperçu des modifications, impossible de trouver la publication originale."
 
 #. translators: %s: post ID.
-#: src/handlers/class-check-changes-handler.php:69
+#: src/handlers/class-check-changes-handler.php:85
 msgid "Changes overview failed, could not find post with ID %s."
 msgstr "Échec de l’aperçu des modifications, impossible de trouver la publication avec l’ID %s."
 
-#: src/handlers/class-check-changes-handler.php:53
+#: src/handlers/class-check-changes-handler.php:69
 msgid "No post has been supplied!"
 msgstr "Aucune publication n’a été fournie !"
 
-#: duplicate-post-admin.php:619
+#: duplicate-post-admin.php:621
 msgid "You aren't allowed to duplicate this post"
 msgstr "Vous n’avez pas l’autorisation de dupliquer cette publication"
 
 #. translators: %s: Yoast Duplicate Post version.
-#: duplicate-post-admin.php:231
+#: duplicate-post-admin.php:233
 msgid "Read more about what’s new in Yoast Duplicate Post %s!"
 msgstr "En savoir plus sur les nouveautés de Yoast Duplicate Post %s !"
 
-#: duplicate-post-admin.php:804
+#: duplicate-post-admin.php:806
 msgid "Subscribe"
 msgstr "S’abonner"
 
@@ -213,16 +221,16 @@ msgstr "L’élément d’origine qui a servi de copie est : <span class=\"dupl
 msgid "The original item this was copied from is: <span class=\"duplicate_post_original_item_title_span\"></span>"
 msgstr "L’élément d’origine qui a servi de copie est : <span class=\"duplicate_post_original_item_title_span\"></span>"
 
-#: src/ui/class-metabox.php:85 src/ui/class-column.php:130
+#: src/ui/class-column.php:130 src/ui/class-metabox.php:85
 msgid "Delete reference to original item."
 msgstr "Supprimer la référence à l’élément original."
 
-#: duplicate-post-admin.php:793
+#: duplicate-post-admin.php:795
 msgid "Email Address"
 msgstr "Adresse e-mail"
 
 #. translators: 1: Yoast
-#: duplicate-post-admin.php:786
+#: duplicate-post-admin.php:788
 msgid "If you want to stay up to date about all the exciting developments around Duplicate Post, subscribe to the %1$s newsletter!"
 msgstr "Si vous souhaitez vous tenir au courant des développements de Duplicate Post, abonnez-vous à la newsletter de %1$s !"
 
@@ -300,7 +308,7 @@ msgid "Edit &#8220;%s&#8221;"
 msgstr "Modifier « %s »"
 
 #. translators: %s: Yoast Duplicate Post version.
-#: duplicate-post-admin.php:222
+#: duplicate-post-admin.php:224
 msgid "What's new in Yoast Duplicate Post version %s:"
 msgstr "Ce qu’il y a de neuf dans Yoast Duplicate Post version %s :"
 
@@ -314,7 +322,7 @@ msgstr "L’utilisateur actuel n’a pas les droits pour copier les publications
 msgid "you probably want this unchecked, unless you have very special requirements"
 msgstr "mieux vaut que vous laissiez cette case vide, à moins d’avoir des exigences particulières"
 
-#: duplicate-post-admin.php:773
+#: duplicate-post-admin.php:775
 msgid "Documentation"
 msgstr "Documentation"
 
@@ -402,13 +410,13 @@ msgstr "Pièces jointes"
 msgid "Password"
 msgstr "Mot de passe"
 
+#: src/handlers/class-check-changes-handler.php:128
 #: src/admin/class-options.php:124
-#: src/handlers/class-check-changes-handler.php:112
 msgid "Content"
 msgstr "Contenu"
 
+#: src/handlers/class-check-changes-handler.php:129
 #: src/admin/class-options.php:117
-#: src/handlers/class-check-changes-handler.php:113
 msgid "Excerpt"
 msgstr "Extrait"
 
@@ -424,8 +432,8 @@ msgstr "État "
 msgid "Date"
 msgstr "Date"
 
+#: src/handlers/class-check-changes-handler.php:127
 #: src/admin/class-options.php:89
-#: src/handlers/class-check-changes-handler.php:111
 msgid "Title"
 msgstr "Titre"
 
@@ -445,7 +453,7 @@ msgstr "Droits"
 msgid "What to copy"
 msgstr "Que copier"
 
-#: duplicate-post-admin.php:625
+#: duplicate-post-admin.php:627
 msgid "Copy features for this post type are not enabled in options page"
 msgstr "Les fonctionnalités de copie pour ce type de publication ne sont pas activées dans la page d’options."
 
@@ -505,8 +513,8 @@ msgstr "Liste séparée par des virgules de champs meta qui ne doivent pas être
 msgid "Do not copy these fields"
 msgstr "Ne pas copier ces champs"
 
-#: src/ui/class-metabox.php:58 src/ui/class-admin-bar.php:94
-#: src/admin/class-options-page.php:81
+#: src/admin/class-options-page.php:81 src/ui/class-admin-bar.php:94
+#: src/ui/class-metabox.php:58
 msgid "Duplicate Post"
 msgstr "Duplicate Post"
 
@@ -526,15 +534,15 @@ msgstr "Échec de la copie, impossible de trouver l’original :"
 msgid "No post to duplicate has been supplied!"
 msgstr "Vous n’avez sélectionné aucune publication à dupliquer !"
 
-#: src/ui/class-row-actions.php:119 src/admin/class-options.php:274
+#: src/admin/class-options.php:274 src/ui/class-row-actions.php:119
 msgid "New Draft"
 msgstr "Nouveau brouillon"
 
-#: duplicate-post-common.php:75 src/ui/class-admin-bar.php:102
-#: src/ui/class-admin-bar.php:119 src/ui/class-classic-editor.php:135
+#: src/ui/class-admin-bar.php:102 src/ui/class-admin-bar.php:119
+#: src/ui/class-classic-editor.php:135 duplicate-post-common.php:77
 msgid "Copy to a new draft"
 msgstr "Copier dans un nouveau brouillon"
 
-#: src/ui/class-bulk-actions.php:75 src/admin/class-options.php:279
+#: src/admin/class-options.php:279 src/ui/class-bulk-actions.php:75
 msgid "Clone"
 msgstr "Dupliquer"
