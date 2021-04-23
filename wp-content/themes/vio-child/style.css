@@ -93,7 +93,7 @@ h3 {
     border-radius: 5px;
 }
 
-.violet_button > button {
+.purple_button > button {
     background-color: #6161D6 !important;
     color: white !important;
     border: none !important;
@@ -346,12 +346,41 @@ h3 {
     border-radius: 8px;
     box-shadow: 0px 10px 20px #0000001A;
     left: 0 !important;
+    width: 300px !important;
 }
 
 .sub-menu > li > a{
     color: #1F2024 !important;
     font-size: 16px !important;
     font-weight: bold !important;
+}
+
+.sub_menu_deploy > a:after {
+    content: '' !important;
+}
+
+.sub_menu_deploy > ul {
+    top: -8px !important;
+    opacity: 1 !important;
+    position: relative !important;
+    visibility: visible !important;
+    background: none !important;
+    box-shadow: none !important;
+}
+
+.wraper_header.style-one .wraper_header_main .nav > [class*="menu-"] > ul.menu > li > ul > li:hover > ul, .wraper_header.style-one .wraper_header_main .nav > [class*="menu-"] > ul.menu > li > ul > li > ul > li:hover > ul, .wraper_header.style-one .wraper_header_main .nav > [class*="menu-"] > ul.menu > li > ul > li > ul > li > ul li:hover > ul {
+    top: -8px !important;
+}
+
+.sub_menu_deploy > ul > li > a {
+    color: #646971 !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+}
+
+.sub_menu_deploy > ul > li {
+    padding-left: 5px !important;
 }
 
 /* Fin Navbar */
@@ -1438,7 +1467,7 @@ h3 {
     margin-bottom: 20px;
 }
 
-.row_download_get_started > div > div > div > .violet_button {
+.row_download_get_started > div > div > div > .purple_button {
     margin-top: auto;
     margin-bottom: 20px;
 }
@@ -1550,7 +1579,7 @@ h3 {
         margin-bottom: 0px;
     }
 
-    .row_download_get_started > div > div > div > .violet_button {
+    .row_download_get_started > div > div > div > .purple_button {
         margin-top: 20px;
         margin-bottom: 0px;
     }
@@ -1942,14 +1971,14 @@ tfoot {
 
 /* Fin Section What is Gatling Frontline */
 
-/* Section Tabs Price */
+/* Section Tabs Price / Form */
 
-.row_tabs_price {
+.row_tabs {
     margin: 50px 15% !important;
 }
 
 .nav-tabs {
-    margin: 20px 20%;
+    margin: 20px 15%;
 }
 
 .inner_row_offers {
@@ -2027,5 +2056,73 @@ tfoot {
     text-transform: uppercase;
 }
 
+.inner_row_form_tabs {
+    margin: 50px 20% !important;
+}
 
-/* Fin Section Tabs Price */
+.container_form_tab > div > form > p {
+    margin: 20px 0px;
+}
+
+.container_form_tab > div > form > p > label {
+    display: block;
+    color: #29323D;
+}
+
+.container_form_tab > div > form > p > label > span {
+    display: block;
+}
+
+.container_form_tab > div > form > p > label > span > input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #8a9caf;
+}
+
+.container_form_tab > div > form > p > label > span > input:focus {
+    border: 0px;
+    border: 2px solid #8a9caf;
+}
+
+.container_form_tab > div > form > p > label > span > select {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #8a9caf;
+}
+
+.accept-box {
+    display: flex !important;
+}
+
+.accept-checkbox {
+    margin-right: 20px;
+}
+
+input[name=accept-checkbox] {
+    transform: scale(1.5);
+}
+
+.mandatory_fields {
+    text-align: center;
+    font-style: italic;
+}
+
+.quote_btn_container {
+    display: flex;
+    justify-content: center;
+}
+
+.get_quote_btn {
+    text-transform: uppercase;
+    background-color: #29323D;
+    color: white;
+    padding: 10px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.ajax-loader {
+    display: none !important;
+}
+
+/* Fin Section Tabs Price / Form */

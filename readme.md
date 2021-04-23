@@ -6,7 +6,7 @@ Lors du clonage du repo, il ne faut pas oulier de créer le wp-config a partir d
 
 Il vous suffit de changer les identifiants de connexion à la base de données et d'importer la base de données wp_gatling.
 
-Les identifiants du Back Office : admin - password
+Les identifiants du Back Office : admin - password (/wp-admin)
 
 ## Plugins :
 
