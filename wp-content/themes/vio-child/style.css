@@ -30,15 +30,14 @@ html, body {
     padding: 0px !important;
 }
 
-.vc_row {
+/*.vc_row {
     margin: 0px !important;
     padding: 0px !important;
-}
+}*/
 
-.vc_column_container>.vc_column-inner {
-    padding: 0px !important;
-}
-
+/*.vc_column_container>.vc_column-inner {
+    padding: 0px;
+}*/
 .wpb_button, .wpb_content_element, ul.wpb_thumbnails-fluid>li {
     margin: 0px !important;
 }
@@ -82,8 +81,8 @@ h3 {
 
 .orange_button > button{
     background-color: #F78557 !important;
+    border: 2px solid #F78557 !important;
     color: white !important;
-    border: none !important;
     background-image: none !important;
     font-size: 14px;
     padding-top: 10px !important;
@@ -96,7 +95,7 @@ h3 {
 .purple_button > button {
     background-color: #6161D6 !important;
     color: white !important;
-    border: none !important;
+    border: 2px solid #6161D6 !important;
     background-image: none !important;
     font-size: 14px;
     padding-top: 10px !important;
@@ -108,8 +107,8 @@ h3 {
 
 .white_button > button {
     background-color: white !important;
+    border: 2px solid white !important;
     color: #6161D6 !important;
-    border: none !important;
     background-image: none !important;
     font-size: 14px;
     padding-top: 10px !important;
@@ -134,8 +133,8 @@ h3 {
 
 .blue_button > button {
     background-color: #4A9FE5 !important;
+    border: 2px solid #4A9FE5 !important;
     color: white !important;
-    border: none !important;
     background-image: none !important;
     font-size: 14px;
     padding-top: 10px !important;
@@ -147,6 +146,16 @@ h3 {
 
 .blue_button > button > a {
     color: white;
+}
+
+.thumbnail-svg-50 img {
+    width: 50px;
+    height: 50px;
+}
+
+.thumbnail-svg-70 img {
+    width: 70px;
+    height: 70px;
 }
 
 /* Fin Default Style */
@@ -291,15 +300,21 @@ h3 {
     background-image: url('./assets/logo/logo-gatling.svg');
     background-repeat: no-repeat;
 }
-
-.wraper_header.style-one .wraper_header_main {
-    background-color: transparent !important;
+.is-sticky .logo_link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url('./assets/logo/logo-gatling-noir.svg');
+    background-repeat: no-repeat;
 }
 
 #menu-navbar > li > a {
     font-family: "DM Sans";
     padding: 10px 5px;
     font-weight: 400 !important;
+}
+.is-sticky #menu-navbar > li > a {
+    color: #1F2024;
 }
 
 .menu_button > a{
@@ -462,9 +477,8 @@ h3 {
     box-shadow: 0px 10px 20px #0000001A;
     border-radius: 8px;
     background-color: white !important;
-    height: 300px;
-    width: 300px;
-    padding: 3rem 2rem;
+    padding: 3rem;
+    margin: 1rem;
 }
 
 .card_info > div > h3 > span{
@@ -576,7 +590,6 @@ h3 {
 
 .section_trusted {
     background-color: #F7F7F7;
-    margin-top: 100px !important;
     margin-bottom: 50px !important;
 }
 
@@ -676,51 +689,6 @@ h3 {
     width: 0.45em;
 }
 
-
-#trusted_adobe, #trusted_bamtech, #trusted_deutsche, #trusted_sophos, #trusted_aircall, #trusted_oui, #trusted_enedis, #trusted_inter {
-    position: absolute;
-}
-
-#trusted_adobe {
-    bottom: 20px;
-    left: 100px;
-}
-
-#trusted_bamtech {
-    bottom: 190px;
-    left: 50px;
-}
-
-#trusted_deutsche {
-    top: -30px;
-    left: 150px;
-}
-
-#trusted_sophos {
-    bottom: 170px;
-    left: 270px;
-}
-
-#trusted_oui {
-    top: -80px;
-    left: 400px;
-}
-
-#trusted_enedis {
-    bottom: 130px;
-    left: 440px;
-}
-
-#trusted_aircall {
-    bottom: -10px;
-    left: 300px;
-}
-
-#trusted_inter {
-    bottom: -40px;
-    left: 500px;
-}
-
 @media (min-width: 1200px) and (max-width: 1366px){
     .column_text_trusted {
         padding-right: 0px !important;
@@ -737,10 +705,6 @@ h3 {
     .column_text_trusted {
         width: 100% !important;
         padding: 0% !important;
-    }
-
-    .column_image_trusted {
-        display: none !important;
     }
 
     .row_card_download_dev {
@@ -1143,7 +1107,7 @@ h3 {
 }
 
 .newsletter_form {
-    padding-top: 50px;
+    padding: 30px 0;
 }
 
 .input_div {
@@ -1223,11 +1187,17 @@ h3 {
 /* Banner Gatling Academy */
 
 .section_banner_gatling_academy {
-    background: url('./assets/gatling-academy/Groupe\ 1533.svg') no-repeat top 100px right -170px, linear-gradient(180deg, #24275E 90%, #FFF 90%);
+    background: url('./assets/gatling-academy/Groupe\ 1533.svg') no-repeat top 100px right -170px, #24275E;
 }
 
 .row_banner_gatling_academy {
-    padding: 200px 10% 0px 10% !important;
+    padding: 150px 10% 50px 10% !important;
+}
+
+.section_banner_gatling_academy .wpb_single_image {
+    position: absolute;
+    bottom: -100px;
+    right: 0;
 }
 
 .text_banner{
@@ -1236,6 +1206,7 @@ h3 {
 
 .block_text_banner {
     margin-bottom: 20px !important;
+    padding-right:20px;
 }
 
 @media (min-width: 768px) and (max-width: 1199px){
@@ -1244,16 +1215,32 @@ h3 {
     }
 }
 
+@media (max-width: 1199px){
+    .section_banner_gatling_academy {
+        background: url('./assets/gatling-academy/Groupe\ 1533.svg') no-repeat top 100px right -170px, linear-gradient(180deg, #24275E 90%, #FFF 90%);
+    }
+    .section_banner_gatling_academy img {
+        margin-top:40px;
+    }
+    .section_banner_gatling_academy .wpb_single_image {
+        position: relative;
+        bottom: 0;
+        right: 0;
+    }
+    .block_text_banner {
+        padding:0;
+    }
+}
+
 /* Fin Banner Gatling Academy */
 
 /* What is GA */
 
 .row_what_ga {
-    margin: 50px 10% !important;
+    margin: 100px 10% !important;
 }
 
 .block_text_what_ga {
-    margin-right: 30% !important;
     margin-left: 15% !important;
 }
 
@@ -1277,6 +1264,11 @@ h3 {
 
 .text_what_ga > strong {
     color: #646971;
+}
+@media (max-width: 1199px){
+    .row_what_ga {
+        margin: 10px 10% 50px !important;
+    }
 }
 
 /* Fin What is GA */
@@ -1647,11 +1639,11 @@ h3 {
 
 .section_table_get_started {
     background-color: #F7F7F7;
-    padding: 100px 0px !important;
+    padding: 100px 10% !important;
 }
 
-.row_table_get_started {
-    margin: 0px 10% !important;
+.section_table_get_started .vc_column_container>.vc_column-inner {
+    padding: 0 !important;
 }
 
 .title_table_get_started {
@@ -1767,11 +1759,11 @@ tfoot {
 }
 
 .column-2.sorting_disabled > img{
-    width: 300px;
+    height: 30px;
 }
 
 .column-3.sorting_disabled > img{
-    width: 300px;
+    height: 30px;
 }
 
 @media screen and (max-width: 1366px) {
@@ -1801,18 +1793,86 @@ tfoot {
 
 /* Section Header Gatling Enterprise */
 
+.section_banner_gatling_enterprise {
+    background: url('./assets/gatling-academy/Groupe\ 1533.svg') no-repeat top 100px right -170px, linear-gradient(180deg, #24275E 95%, #FFF 95%);
+}
+
+.section_banner_gatling_enterprise .video_player > div {
+    padding-top:130px;
+}
+
+.row_banner_gatling_enterprise {
+    padding: 80px 10% 0 10% !important;
+}
+
 .row_double_button_header > div {
     width: auto;
     margin-right: 30px;
 }
+@media screen and (max-width: 1200px){
+    .section_banner_gatling_enterprise {
+        background: url('./assets/gatling-academy/Groupe\ 1533.svg') no-repeat top 100px right -170px, #24275E;
+    }
+    .row_banner_gatling_enterprise {
+        padding: 150px 10% 40px 10% !important;
+    }
+    .section_banner_gatling_enterprise .video_player > div {
+        padding-top:50px;
+    }
+}
+@media screen and (max-width: 768px){
+    .section_banner_gatling_enterprise {
+        background: url('./assets/gatling-academy/Groupe\ 1533.svg') no-repeat top 100px right -170px, linear-gradient(180deg, #24275E 95%, #FFF 95%);
+    }
+    .row_banner_gatling_enterprise {
+        padding: 150px 10% 0 10% !important;
+    }
+    .section_banner_gatling_enterprise .video_player > div {
+        padding-top:30px;
+    }
+}
 
 /* Fin Section Header Gatling Enterprise */
+
+.section_what_is_gatling_enterprise {
+    padding: 70px 15% 70px !important;
+}
+
+@media screen and (max-width: 768px){
+    .section_what_is_gatling_enterprise {
+        padding: 80px 15% 30px !important;
+    }
+}
+
+/* Section Key Features */
+
+.section_features_gatling_enterprise {
+    background-color: #F7F7F7;
+    padding: 80px 10% !important;
+}
+
+.row_inner_card_key_features .card_key_feature > div {
+    background-color: white;
+    padding: 50px !important;
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px #0000001A;
+}
+
+.key_feature_title {
+    background: transparent;
+    box-shadow: none;
+}
+
+.row_inner_card_key_features .card_key_feature img {
+    width: 70px;
+    height: 70px;
+}
 
 /* Section Try Gatling FrontLine */
 
 .section_try_gatling_enterprise {
     background-color: #F7F7F7;
-    padding: 50px 0px !important;
+    padding: 80px 10% !important;
 }
 
 .row_try_gatling_enterprise {
@@ -1881,11 +1941,7 @@ tfoot {
 /* Section Difference Premises - Cloud */
 
 .section_difference_premises_cloud {
-    padding: 100px 0px !important;
-}
-
-.row_difference_premises_cloud {
-    margin: 0 20% !important;
+    padding: 100px 10% 40px !important;
 }
 
 .title_difference_premises_cloud {
@@ -1893,7 +1949,15 @@ tfoot {
 }
 
 .row_inner_difference_premises_cloud {
-    margin-top: 50px !important;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.row_inner_difference_premises_cloud > div > div {
+    background-color: white;
+    padding: 50px !important;
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px #0000001A;
 }
 
 .desc_difference_premises_cloud {
@@ -1901,7 +1965,7 @@ tfoot {
 }
 
 @media screen and (max-width: 768px){
-    .row_inner_difference_premises_cloud > div{
+    .row_inner_difference_premises_cloud >div{
         width: 100%;
         margin-bottom: 20px;
     }
@@ -2126,3 +2190,18 @@ input[name=accept-checkbox] {
 }
 
 /* Fin Section Tabs Price / Form */
+
+/* PAGE : Features */
+
+.section_banner_features {
+    background: url('./assets/patterns/pattern-circles.svg') no-repeat top 0 right -170px, #24275E;
+}
+.row_banner_features {
+    padding: 150px 10% 250px !important;
+}
+.section_features {
+    background: linear-gradient(180deg, transparent 15%, #F7F7F7 15%);
+    margin-top:-250px !important;
+    padding: 80px 10% !important;
+}
+}
