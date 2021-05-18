@@ -92,3 +92,13 @@ function image_to_image_tag($post_id) {
   $meta_key = 'post_grid_speaker_picture_converted';
   update_post_meta($post_id, $meta_key, $image_tag); 
 }
+
+/* Hide custom post types in admin menu */
+
+function delete_post_type(){
+unregister_post_type( 'client' );
+unregister_post_type( 'case-studies' );
+unregister_post_type( 'portfolio' );
+unregister_post_type( 'testimonial' );
+}
+add_action('init','delete_post_type');
