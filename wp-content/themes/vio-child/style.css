@@ -82,6 +82,10 @@ h3 {
 .text-bloc p {
     margin-bottom: 15px !important;
 }
+.text-bloc a { 
+    color:#565656 !important;
+    text-decoration: underline !important;
+}
 
 .text-black,
 .text-black p,
@@ -2739,5 +2743,57 @@ input[name=accept-checkbox] {
 
     .section_banner_get_started .row_get_started {
         margin:0 !important;
+    }
+}
+
+/* PAGE : Open source */
+
+.section_banner_open_source {
+    background: url('./assets/patterns/pattern-company.svg') no-repeat top 0 right -120px, #24275E;
+}
+
+.row_banner_open_source {
+    padding: 80px 10% 0 10% !important;
+}
+
+.section_banner_open_source .wpb_single_image {
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+}
+
+.section_banner_open_source .video_player > div {
+    padding-top:130px;
+}
+
+.section_resources_open_source {
+    padding:40px 0 80px !important;
+}
+.long_card_academy_open_source {
+    background-color: #24275e !important;
+    border: 1px solid #24275e !important;
+    box-shadow: 0px 10px 20px #0000001A;
+    border-radius: 8px;
+    padding: 25px !important;
+    margin: 0 10% !important;
+}
+.section_info_card_open_source {
+    padding: 80px 10% !important;
+}
+.section_info_card_open_source .text_info_desc {
+    padding-right: 30px;
+}
+.section_info_card_open_source .card_info_open_source {
+    margin: 0 !important;
+    background-color: white;
+    box-shadow: 0px 10px 20px #0000001A;
+    border-radius: 8px;
+    padding: 3rem 0 3rem 3rem !important;
+}
+
+@media (max-width: 768px){
+    .section_info_card_open_source .text_info_desc {
+        padding-right: 0;
+        margin:0 0 30px 0 !important;
     }
 }
