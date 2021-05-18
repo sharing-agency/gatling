@@ -52,6 +52,9 @@ if ( ! class_exists( 'ReduxFrameworkPlugin' ) || ( is_404() ) || ( is_search() )
 <!-- custom js -->
 <script type="text/javascript">
 jQuery(document).ready(function($){
+
+	/* Manage params */
+
 	setTimeout(function() { 
 		<?php if(isset($_GET['use-cases'])) { ?>
     		$('span[data-vc-grid-filter-value=".vc_grid-term-62"]').trigger('click');
@@ -75,6 +78,22 @@ jQuery(document).ready(function($){
     		$('a[href="#enterprise"]').trigger('click');
     	<?php } ?>
     }, 400);
+
+    /* Manage get started tabs */
+    $('.btn-getting-started').on('click', function(){
+		$('.btn-getting-started').removeClass('active');
+		$(this).addClass('active');
+	});
+
+    $('.openGatlingTab').on('click', function(){
+    	$('.row_inner_gatling_enterprise').hide();
+    	$('.row_inner_gatling').show();
+    })
+
+    $('.openGatlingEnterpriseTab').on('click', function(){
+    	$('.row_inner_gatling').hide();
+    	$('.row_inner_gatling_enterprise').show();
+    })
 }
 );
 </script>
