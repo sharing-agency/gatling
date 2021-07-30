@@ -9,6 +9,9 @@
 
 <?php while ( have_posts() ) : ?>
 
+    <?php // Get post type
+    $postType = get_post_type(); ?>
+
     <div id="primary post-<?php the_ID(); ?>" <?php post_class( 'content-area' ); ?>>
     	<main id="main" class="site-main">
     	    <!-- wraper_blog_banner style-one -->
@@ -57,14 +60,20 @@
                                     	<!-- blog_banner_tags_item -->
                                     	<div class="blog_banner_tags_item">
                                     	    <p class="site-meta">
-                                    	        <?php
-                                    	        $category_detail = get_the_category( get_the_id() );
-                                    	        foreach ( $category_detail as $item ) {
-                                    	        $category_link = get_category_link( $item->cat_ID );
-                                    	        ?>
-                                    	        <a href="<?php echo esc_url( $category_link );?>"><?php echo esc_html( $item->name ); ?></a>
-                                    	        <?php } ?>
-                                    	      
+                                    	        <?php 
+                                                if($postType == "resources") {
+                                                    $term = get_field('category');
+                                                    echo ucfirst($term);
+                                                }
+                                                else {
+                                                    $category_detail = get_the_category( get_the_id() );
+                                        	        foreach ( $category_detail as $item ) {
+                                        	        $category_link = get_category_link( $item->cat_ID );
+                                        	        ?>
+                                        	        <?php echo esc_html( $item->name ); ?>
+                                        	        <?php } 
+                                                } ?>
+                                    	       
                                 	        </p>
                                 	    </div>
                                 	    <!-- blog_banner_tags_item -->
@@ -89,7 +98,31 @@
                         <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
                         	<!-- blog_single style-one -->
                         	<div class="blog_single style-one">
-                    			<?php the_post(); get_template_part( 'template-parts/content-single-one', get_post_format() ); ?>
+                                <?php // If resource, we check if an Hubspot protects the content
+                                $contentLocked = "";
+                                $hubspot_form = get_field('hubspot_form');
+                                $title_form = get_field('title');
+                                $current_param = isset($_GET['unlock']) ? $_GET['unlock'] : '';
+
+                                if(
+                                    $postType == "resources" 
+                                    && isset($hubspot_form) 
+                                    && $hubspot_form !== ""
+                                    && $current_param <> $post->ID
+                                ){
+                                    //echo $hubspot_form;
+                                    $contentVisibility = "contentLocked";
+                                    echo '<div id="hubspotForm" data-post-id="'.$post->ID.'">';
+                                    echo '<h2 class="text-black">'.$title_form.'</h2>';
+                                    echo $hubspot_form;
+                                    echo '</div>';
+                                }
+                                ?>
+                                <div class="<?php echo $contentVisibility ?>">
+                                    <?php
+                                    the_post(); get_template_part( 'template-parts/content-single-one', get_post_format() );                                
+                                    ?>
+                                </div>
                     			<?php 
                     			$tags = get_the_tags( $post->ID );
                     			if ( true == vio_global_var( 'display_tags', '', false ) && ( ! empty( $tags ) ) ) : ?>

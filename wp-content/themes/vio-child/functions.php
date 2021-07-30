@@ -8,15 +8,7 @@
 /**
  * Enqueue child theme css.
  */
-function vio_child_enqueue_styles() {
-	wp_enqueue_style(
-		'child-style',
-		get_stylesheet_directory_uri() . '/style.css',
-		array(),
-		wp_get_theme()->get( 'Version' )
-	);
-}
-add_action( 'wp_enqueue_scripts', 'vio_child_enqueue_styles' );
+
 
 /* Trim exercept texts */
 
@@ -99,6 +91,12 @@ function delete_post_type(){
 unregister_post_type( 'client' );
 unregister_post_type( 'case-studies' );
 unregister_post_type( 'portfolio' );
-unregister_post_type( 'testimonial' );
 }
 add_action('init','delete_post_type');
+
+// https://www.evince.uk/fixing-retina-js-404-console-errors-on-wordpress/
+// https://github.com/strues/retinajs/issues/231
+function dequeue_retina_script() {
+  wp_dequeue_script('retina');
+}
+add_action( 'wp_enqueue_scripts', 'dequeue_retina_script', 20 );

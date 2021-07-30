@@ -51,33 +51,100 @@ if ( ! class_exists( 'ReduxFrameworkPlugin' ) || ( is_404() ) || ( is_search() )
 
 <!-- custom js -->
 <script type="text/javascript">
-jQuery(document).ready(function($){
+
+jQuery(document).ready(function($) {
+
+    /* Download bundles */
+
+    function o(e) {
+        return "https://repo1.maven.org/maven2/io/gatling/highcharts/gatling-charts-highcharts-bundle/" + e + "/gatling-charts-highcharts-bundle-" + e + "-bundle.zip";
+    }
+    window.DownloadBundle = function (e, s) {
+        location.href = o(e);
+    };
+    window.DownloadBundleAndRedirect = function (e, s) {
+        (location.href = o(e)),
+            setTimeout(function () {
+                window.location = s;
+            }, 1000);
+    };
 
 	/* Manage params */
 
-	setTimeout(function() { 
-		<?php if(isset($_GET['use-cases'])) { ?>
-    		$('span[data-vc-grid-filter-value=".vc_grid-term-62"]').trigger('click');
-    	<?php } ?>
-    	<?php if(isset($_GET['cloud'])) { ?>
-    		$('a[href="#cloud"]').trigger('click');
-    	<?php } ?>
-    	<?php if(isset($_GET['self-hosted'])) { ?>
-    		$('a[href="#self_hosted"]').trigger('click');
-    	<?php } ?>
-    	<?php if(isset($_GET['aws'])) { ?>
-    		$('a[href="#aws"]').trigger('click');
-    	<?php } ?>
-    	<?php if(isset($_GET['azure'])) { ?>
-    		$('a[href="#azure"]').trigger('click');
-    	<?php } ?>
-    	<?php if(isset($_GET['open-source'])) { ?>
-    		$('a[href="#open_source"]').trigger('click');
-    	<?php } ?>
-    	<?php if(isset($_GET['enterprise'])) { ?>
-    		$('a[href="#enterprise"]').trigger('click');
-    	<?php } ?>
-    }, 400);
+    <?php if(isset($_GET['use-cases'])) { ?>
+        $(window).bind( 'grid:items:added', function(){
+            if($('body.gridLoaded').length == 0){
+                openTab();
+                $('body').addClass('gridLoaded');
+            }
+        });
+    <?php } ?>
+
+    <?php if(
+        isset($_GET['cloud'])
+        || isset($_GET['self-hosted'])
+        || isset($_GET['aws'])
+        || isset($_GET['azure'])
+        || isset($_GET['opensource'])
+        || isset($_GET['enterprise'])
+        || isset($_GET['opensource'])
+        || isset($_GET['enterprise'])
+    ) { ?>
+
+        openTab();
+
+    <?php } ?>
+
+    function openTab(){
+
+        var triggerTab, 
+            targetTab,
+            triggerTime = 500;
+
+        <?php // RESOURCES ?>
+        <?php if(isset($_GET['use-cases'])) { ?>
+            triggerTab = '.vc_grid-filter-item.vc_active';
+            targetTab = 'span[data-vc-grid-filter-value=".vc_grid-term-62"]'; 
+            triggerTime = 500;           
+        <?php } ?>
+        <?php // PRICING ?>
+        <?php if(isset($_GET['cloud'])) { ?>
+            triggerTab = 'ul.nav-tabs li.active';
+            targetTab = 'a[href="#cloud"]';
+        <?php } ?>
+        <?php if(isset($_GET['self-hosted'])) { ?>
+            triggerTab = 'ul.nav-tabs li.active';
+            targetTab = 'a[href="#self_hosted"]';
+        <?php } ?>
+        <?php if(isset($_GET['aws'])) { ?>
+            triggerTab = 'ul.nav-tabs li.active';
+            targetTab = 'a[href="#aws"]';
+        <?php } ?>
+        <?php if(isset($_GET['azure'])) { ?>
+            triggerTab = 'ul.nav-tabs li.active';
+            targetTab = 'a[href="#azure"]';
+        <?php } ?>
+        <?php // GET STARTED ?>
+        <?php if(isset($_GET['opensource'])) { ?>
+            triggerTab = '.btn-getting-started.active';
+            targetTab = '.openGatlingTab';
+        <?php } ?>
+        <?php if(isset($_GET['enterprise'])) { ?>
+            triggerTab = '.btn-getting-started.active';
+            targetTab = '.openGatlingEnterpriseTab';
+        <?php } ?>      
+
+        if($(triggerTab).length){
+            setTimeout(function() { 
+                $(targetTab).trigger('click');
+            }, triggerTime)
+        } else {
+            setTimeout(function() { 
+                openTab();
+            }, 500);
+        }
+
+    }
 
     /* Manage get started tabs */
     $('.btn-getting-started').on('click', function(){
@@ -94,9 +161,69 @@ jQuery(document).ready(function($){
     	$('.row_inner_gatling').hide();
     	$('.row_inner_gatling_enterprise').show();
     })
-}
-);
+
+    /* Cloud pricing */
+
+    $('select.feature-credit').on('change', function(){
+        var periodDiscount = $('.cloud-pricing-monthly.active').length > 0 ? 0 : 0.30,
+            currentDiscount = 0,
+            nbCredits = $(this).val(),
+            costPerCredit = 0.198,
+            currencyPeriod = $(this).closest('.column_price').find('.price sub').text(),
+            priceZone = $(this).closest('.column_price').find('.price'),
+            price = parseInt(priceZone.text());
+
+        // Check if there is earlybird
+        if($(this).closest('.column_price').hasClass('earlybird')) {
+            currentDiscount = $('.cloud-pricing-monthly.active').length > 0 ? 0.30 : 0;
+        }
+
+        // Update discounted price
+        var newPrice = nbCredits*costPerCredit*(1-currentDiscount)*(1-periodDiscount);
+        priceZone.html(Math.trunc(newPrice)+'<sub>'+currencyPeriod+'</sub>');
+
+        // Update original price
+        if($('.cloud-pricing-monthly.active').length > 0){
+            var originalPrice = nbCredits*costPerCredit*(1-periodDiscount);
+            priceZone.prepend('<span class="origin-price">'+Math.trunc(originalPrice)+currencyPeriod+'</span>');
+        } else {
+            $('.origin-price').remove();
+        }
+        
+    });
+
+    $('.cloud-pricing-monthly').trigger('click');
+    
+    $('.cloud-pricing-switch').on('click', function(){
+        $('.cloud-pricing-switch').removeClass('active');
+        $(this).addClass('active');
+
+        $('select.feature-credit').trigger('change');
+    });
+
+    $('select.feature-credit').trigger('change');
+
+});
 </script>
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8006059.js"></script>
+
+<!-- GA Code -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53375088-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', "UA-53375088-1");
+  gtag('config', "G-B5J9F14X56");
+</script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer',"GTM-MJX8KRG");</script>
 
 </body>
 </html>
