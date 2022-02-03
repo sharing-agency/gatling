@@ -102,6 +102,7 @@
                                 $contentLocked = "";
                                 $hubspot_form = get_field('hubspot_form');
                                 $title_form = get_field('title');
+                                $text_preview = get_field('text_preview') ?? '';
                                 $current_param = isset($_GET['unlock']) ? $_GET['unlock'] : '';
 
                                 if(
@@ -110,12 +111,28 @@
                                     && $hubspot_form !== ""
                                     && $current_param <> $post->ID
                                 ){
+
+                                    if($text_preview !== ""){
+                                        echo '<div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                    <div class="textPreview">
+                                                    '.$text_preview.'
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">';
+                                    }
+
                                     //echo $hubspot_form;
                                     $contentVisibility = "contentLocked";
                                     echo '<div id="hubspotForm" data-post-id="'.$post->ID.'">';
                                     echo '<h2 class="text-black">'.$title_form.'</h2>';
                                     echo $hubspot_form;
                                     echo '</div>';
+
+                                    if($text_preview !== ""){
+                                        echo '</div>
+                                            </div>';
+                                    }
                                 }
                                 ?>
                                 <div class="<?php echo $contentVisibility ?>">

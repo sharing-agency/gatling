@@ -2687,6 +2687,7 @@ input[name=accept-checkbox] {
     color: #F78557 !important;
     text-decoration: line-through !important; 
     margin-right: 10px;
+    line-height: 0px !important;
 }
 #cloud h4 {
     font-size: 20px !important;
@@ -2733,6 +2734,11 @@ input[name=accept-checkbox] {
 #cloud .feature-line.feature-off {
     color: #CFD1D6;
     text-decoration: line-through !important; 
+}
+#cloud .rt-pricing-table.element-two>.holder>.heading .subtitle {
+    max-width: 168px !important;
+    margin: -10px auto 0 auto !important;
+    line-height: 10px;
 }
 
 /* Fin Section Tabs Price / Form */

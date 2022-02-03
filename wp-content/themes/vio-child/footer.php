@@ -165,28 +165,29 @@ jQuery(document).ready(function($) {
     /* Cloud pricing */
 
     $('select.feature-credit').on('change', function(){
-        var periodDiscount = $('.cloud-pricing-monthly.active').length > 0 ? 0 : 0.30,
-            currentDiscount = 0,
-            nbCredits = $(this).val(),
-            costPerCredit = 0.198,
+        var originalPrice = $('.cloud-pricing-monthly.active').length > 0 ? $(this).children('option:selected').attr('data-monthly-price') : $(this).children('option:selected').attr('data-annually-price'),
             currencyPeriod = $(this).closest('.column_price').find('.price sub').text(),
-            priceZone = $(this).closest('.column_price').find('.price'),
-            price = parseInt(priceZone.text());
-
-        // Check if there is earlybird
-        if($(this).closest('.column_price').hasClass('earlybird')) {
-            currentDiscount = $('.cloud-pricing-monthly.active').length > 0 ? 0.30 : 0;
-        }
+            priceZone = $(this).closest('.column_price').find('.price');
 
         // Update discounted price
-        var newPrice = nbCredits*costPerCredit*(1-currentDiscount)*(1-periodDiscount);
-        priceZone.html(Math.trunc(newPrice)+'<sub>'+currencyPeriod+'</sub>');
+        priceZone.html(Math.trunc(originalPrice)+'<sub>'+currencyPeriod+'</sub>');
+
+        // For earlybirds, we take annually prices
+        var earlybirdPrice = $(this).children('option:selected').attr('data-earlybird');
+        if (typeof earlybirdPrice !== 'undefined' && earlybirdPrice !== false) {
+            newPrice = earlybirdPrice;
+            priceZone.html(Math.trunc(newPrice)+'<sub>'+currencyPeriod+'</sub>');
+            priceZone.prepend('<span class="origin-price">'+Math.trunc(originalPrice)+currencyPeriod+'</span>');
+        } 
+
+        // We update links
+        var targetLink = $('.cloud-pricing-monthly.active').length > 0 ? $(this).children('option:selected').attr('data-target-monthly-link') : $(this).children('option:selected').attr('data-target-annually-link');
+        if (typeof targetLink !== 'undefined' && targetLink !== false) {
+            $(this).closest('.column_price').find('a.vc_btn3').attr('href', targetLink);
+        }
 
         // Update original price
-        if($('.cloud-pricing-monthly.active').length > 0){
-            var originalPrice = nbCredits*costPerCredit*(1-periodDiscount);
-            priceZone.prepend('<span class="origin-price">'+Math.trunc(originalPrice)+currencyPeriod+'</span>');
-        } else {
+        if($('.cloud-pricing-monthly.active').length == 0){
             $('.origin-price').remove();
         }
         
@@ -210,7 +211,7 @@ jQuery(document).ready(function($) {
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8006059.js"></script>
 
 <!-- GA Code -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53375088-1"></script>
+<script async defer src="https://www.googletagmanager.com/gtag/js?id=UA-53375088-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -221,7 +222,7 @@ jQuery(document).ready(function($) {
 
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.defer=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer',"GTM-MJX8KRG");</script>
 
